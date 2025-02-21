@@ -17,7 +17,7 @@
 ### Required Files:
 
 - [target.txt](/integrity/target.txt)
-- [keybox.xml](t.me/playfixnext/77526)
+- [keybox.xml](https://t.me/playfixnext/77526)
 
 
 ### Steps to Follow:
