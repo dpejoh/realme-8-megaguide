@@ -1,0 +1,7 @@
+com.google.android.gms
+com.android.vending!
+com.android.gsf
+android
+io.github.vvb2060.keyattestation!
+io.github.vvb2060.mahoshojo
+icu.nullptr.nativetest
