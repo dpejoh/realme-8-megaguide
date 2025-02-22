@@ -37,7 +37,7 @@
 ```sh
    su
 ```
-   - Alternatively, grant it from a root management app like Magisk or KernelSU, or modify permissions using APatch (if applicable)."
+   - Alternatively, grant it from a root management app like Magisk or KernelSU, or modify permissions using APatch (if applicable).
    - Run:
 ```sh
 sed -i 's/"spoofVendingSdk": 0/"spoofVendingSdk": 1/' /data/adb/modules/playintegrityfix/pif.json
