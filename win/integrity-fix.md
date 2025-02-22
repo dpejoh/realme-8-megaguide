@@ -33,11 +33,15 @@
    - This step is not required for KernelSU (Apatch compatibility is unknown).
 5. **For PIF, run the following in the terminal:**
    - Open **Termux**.
+   - Grant root access to ZArchiver by running:
+``bash
+   su
+``
    - Run:
 ``bash
-su
 sudo sed -i 's/"spoofVendingSdk": 0/"spoofVendingSdk": 1/' /data/adb/modules/playintegrityfix/pif.json
 ``
+
 ### Additional Tips:
 - Always check release notes, as developers may introduce new steps, such as the fifth step added in PIF v18.6.
 - After setting everything up, most detections should be bypassed.
