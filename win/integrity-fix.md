@@ -2,16 +2,17 @@
 
 ### Required Modules:
 
-- [Zygisk Next](https://github.com/Dr-TSNG/ZygiskNext)
-- [Zygisk Maphide](https://github.com/HuskyDG/zygisk-maphide)
-- [Play Integrity Fix](https://github.com/chiteroman/PlayIntegrityFix)
-- [Tricky Store](https://github.com/5ec1cff/TrickyStore)
+- [Zygisk Next](https://github.com/Dr-TSNG/ZygiskNext/releases)
+- [Zygisk Maphide](https://github.com/HuskyDG/zygisk-maphide/releases)
+- [Play Integrity Fix](https://github.com/chiteroman/PlayIntegrityFix/releases)
+- [Tricky Store](https://github.com/5ec1cff/TrickyStore/releases)
 - [Shamiko](https://github.com/LSPosed/LSPosed.github.io/releases)
 
 ### Required Apps:
 
 - [Play Integrity API Checker](https://play.google.com/store/apps/details?id=gr.nikolasspyr.integritycheck&hl=en)
 - [ZArchiver](https://play.google.com/store/apps/details?id=ru.zdevs.zarchiver&hl=en&pli=1)
+- [Termux](https://play.google.com/store/apps/details?id=com.termux&hl=en)
 - [Native Detector](https://github.com/reveny/Android-Native-Root-Detector)
 
 ### Required Files:
@@ -30,8 +31,15 @@
    - Open Magisk and go to **Settings > DenyList**.
    - Enable **Google Play Services**, **Play Store**, and any other apps you want to hide root from.
    - This step is not required for KernelSU (Apatch compatibility is unknown).
-
+5. **For PIF, run the following in the terminal:**
+   - Open **Termux**.
+   - Run:
+``bash
+su
+sudo sed -i 's/"spoofVendingSdk": 0/"spoofVendingSdk": 1/' /data/adb/modules/playintegrityfix/pif.json
+``
 ### Additional Tips:
+- Always check release notes, as developers may introduce new steps, such as the fifth step added in PIF v18.6.
 - After setting everything up, most detections should be bypassed.
 - If you still face detections, try using [HideMyApplist](https://github.com/Dr-TSNG/Hide-My-Applist).
 
