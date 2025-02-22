@@ -34,13 +34,14 @@
 5. **For PIF, run the following in the terminal:**
    - Open **Termux**.
    - Grant root access to ZArchiver by running:
-``bash
+```sh
    su
-``
+```
+   - Alternatively, grant it from a root management app like Magisk or KernelSU, or modify permissions using APatch (if applicable)."
    - Run:
-``bash
-sudo sed -i 's/"spoofVendingSdk": 0/"spoofVendingSdk": 1/' /data/adb/modules/playintegrityfix/pif.json
-``
+```sh
+sed -i 's/"spoofVendingSdk": 0/"spoofVendingSdk": 1/' /data/adb/modules/playintegrityfix/pif.json
+```
 
 ### Additional Tips:
 - Always check release notes, as developers may introduce new steps, such as the fifth step added in PIF v18.6.
