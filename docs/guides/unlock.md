@@ -5,7 +5,7 @@
 
 Questions? [Realme 8 AOSP](https://t.me/Realme8AOSPGroup) on Telegram or [GitHub Discussions](https://github.com/driedpampas/realme-8-megaguide/discussions/new/choose).
 
-Already unlocked? Skip to [Patching `lk`](#patching-lk) (fastboot access) or [Custom ROM](/guides/custom-rom).
+Already unlocked? Skip to [Patching LK](/guides/patching-lk) (fastboot access) or [Custom ROM](/guides/custom-rom).
 
 > [!CAUTION]
 > **Back up first.** Follow the [Backup guide](/guides/backup) before proceeding.
@@ -13,7 +13,7 @@ Already unlocked? Skip to [Patching `lk`](#patching-lk) (fastboot access) or [Cu
 The official Realme unlock (Deep Testing) no longer works. This guide uses MTK Client to unlock via BROM mode. Works on any firmware.
 
 > [!TIP]
-> Skip to [Patching `lk`](#patching-lk) or [Custom ROM](/guides/custom-rom) if your bootloader is already unlocked.
+> Skip to [Patching LK](/guides/patching-lk) or [Custom ROM](/guides/custom-rom) if your bootloader is already unlocked.
 
 ## Dependencies
 
@@ -122,7 +122,7 @@ Or hold all hardware buttons until the phone reboots.
  
 > [!IMPORTANT]  
 > **First boot will take around 5-20 minutes.**
-> **You will see `dm-verity corruption` and `orange state` warnings. Press the *Power Button* to continue. These are normal and will be patched later in the guide.**
+> **You will see `dm-verity corruption` and `orange state` warnings. Press the *Power Button* to continue. These are normal and will be patched in the [LK patching](/guides/patching-lk) step.**
 
 6. Set your phone up and enable **Developer Options** and verify that the bootloader is unlocked under `OEM unlocking`
 
@@ -134,50 +134,14 @@ Or hold all hardware buttons until the phone reboots.
 >
 > **If you want a custom ROM:** you must be on base **C.18 (RUI3)** or **F.11 (RUI4)**.
 
-## Flash your base firmware
+## Flash base firmware
 
-> [!NOTE]
-> Some custom ROMs include the base firmware in the zip. If yours does, skip this step and go to [LK patching](#patching-lk).
+Some custom ROMs include the base firmware in the zip. If yours does, skip this and go straight to [Patching LK](/guides/patching-lk).
 
-There are **two base options** for custom ROMs — **C.18 (RUI3)** and **F.11 (RUI4)**. The flashing process is the same for both.
-
-Follow the [Base Firmware Guide](/guides/base-firmware) to flash either C.18 or F.11.
-
-Proceed to [LK patching](#patching-lk) after you've flashed your chosen base.
-
-## Patching `lk`
-
-> [!warning]
-> **This is necessary for getting fastboot access and removing dm-verity and orange state warnings.**
-
-1. Go back to the [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763) folder
-2. Open the console again in `MTK Client` folder
-   ![](https://i.imgur.com/RJtobaI.png)
-3. Make sure your phone is powered off, hold down both **Vol+, Vol-** and connect the usb cable.
-4. Read the current lk partition:
-
-```bash
-python mtk r lk lk.bin
-```
-
-The `lk.bin` file will appear in the **MTK Client** folder.
-	![](https://i.imgur.com/gL4Qpc2.png)
-5. Go to this [website](http://lkpatcher.cxwof.dev/). Upload your lk.bin file and the `lk-patched.bin` will be downloaded. Move it to `MTK Client` folder.
-	![](https://i.imgur.com/HOve3Mv.png)
-6. Flash the patched lk:
-
-```bash
-python mtk w lk lk-patched.bin
-```
-
-> [!IMPORTANT]
-> Check [Manual patching](https://github.com/driedpampas/realme-8-megaguide/wiki/Patching-LK-(local)) if you have issues with the website.
-
-> [!TIP]
-> Check [FAQ](https://github.com/driedpampas/realme-8-megaguide/wiki/FAQ#4-i-patched-my-lk-but-the-phone-still-says-fastboot_verify_fail) if something does not work or you have questions.
+Otherwise follow the [Base Firmware Guide](/guides/base-firmware) to flash **C.18 (RUI3)** or **F.11 (RUI4)**.
 
 ## Next Steps
 
+- [Patch LK for fastboot access](/guides/patching-lk)
 - [Install a Custom ROM & Recovery](/guides/custom-rom)
 - [Root your device](/guides/rooting)
-- [More in the Wiki](https://github.com/driedpampas/realme-8-megaguide/wiki)

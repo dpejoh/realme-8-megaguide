@@ -5,10 +5,10 @@
 
 There are **two base firmware options** for custom ROMs:
 
-| Base | Notes |
-| :--: | :---- |
-| **C.18 (RUI3)** | Required for most custom ROMs |
-| **F.11 (RUI4)** | For RUI4-based ROMs |
+|      Base       | Notes                                   |
+| :-------------: | :-------------------------------------- |
+| **C.18 (RUI3)** | Required for all RUI3-based ROMs        |
+| **F.11 (RUI4)** | Required only for older RUI4-based ROMs |
 
 Both use the same flashing steps. Only the firmware file itself differs.
 

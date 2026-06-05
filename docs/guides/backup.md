@@ -4,7 +4,7 @@ This method makes a _firmware_ backup in case IMEI is erased or system is bricke
 
 > [!NOTE]
 >
-> The backup skips `userdata` (personal files) by default — raw dumps aren't practical to restore. You can also skip `super` with `--skip userdata,super` if you want a smaller backup. Super can always be re-flashed from a firmware package.
+> The backup skips `userdata` (personal files) by default. Raw dumps aren't practical to restore. You can also skip `super` with `--skip userdata,super` if you want a smaller backup. Super can always be re-flashed from a firmware package.
 >
 > Back up personal data separately via cloud storage or manual transfer.
 ## Dependencies

@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
 :root {
-  --vp-font-mono: 'JetBrains Mono', monospace;
+  --vp-font-family-base: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --vp-font-family-mono: 'JetBrains Mono', monospace;
+  font-optical-sizing: auto;
 
   --vp-c-brand-1: #2979ff;
   --vp-c-brand-2: #1c6eff;
@@ -40,8 +43,8 @@
   --vp-badge-tip-bg: rgba(41, 121, 255, 0.12);
 
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: linear-gradient(135deg, #2979ff, #1c6eff);
-  --vp-home-hero-image-background-image: linear-gradient(135deg, #2979ff, #1c6eff);
+  --vp-home-hero-name-background: linear-gradient(135deg, #448aff, #0955e0);
+  --vp-home-hero-image-background-image: linear-gradient(135deg, #448aff, #0955e0);
   --vp-home-hero-image-filter: blur(72px);
 }
 
@@ -70,8 +73,8 @@
   --vp-badge-tip-text: #82b3ff;
   --vp-badge-tip-bg: rgba(130, 179, 255, 0.12);
 
-  --vp-home-hero-image-background-image: linear-gradient(135deg, #82b3ff, #6ba3f7);
-  --vp-home-hero-name-background: linear-gradient(135deg, #82b3ff, #6ba3f7);
+  --vp-home-hero-image-background-image: linear-gradient(135deg, #93c5fd, #6ba3f7);
+  --vp-home-hero-name-background: linear-gradient(135deg, #93c5fd, #6ba3f7);
   --vp-home-hero-name-color: transparent;
 }
 
@@ -85,12 +88,22 @@
 
 /* Nav bar brand color */
 .VPNavBarTitle .title {
-  color: #ffffff !important;
+  color: #1a1a1a;
+  font-variation-settings: 'opsz' 32;
+}
+
+.dark .VPNavBarTitle .title {
+  color: #ffffff;
 }
 
 /* Hero section */
 .VPHomeHero .tagline {
   opacity: 0.85;
+  font-variation-settings: 'opsz' 16;
+}
+
+.VPHero .name.clip {
+  font-variation-settings: 'opsz' 48;
 }
 
 /* Feature cards */
@@ -156,6 +169,10 @@
 }
 
 /* Links */
+.vp-doc {
+  font-variation-settings: 'opsz' 14;
+}
+
 .vp-doc a {
   text-decoration: none;
   transition: all 0.2s ease;
@@ -325,15 +342,8 @@
 }
 
 /* Buttons */
-.VPButton.brand {
-  background: var(--vp-c-brand-1) !important;
-  border: none !important;
-  transition: all 0.25s ease !important;
-}
-
-.VPButton.brand:hover {
-  box-shadow: 0 4px 14px rgba(41, 121, 255, 0.35) !important;
-  transform: translateY(-1px);
+.dark .VPButton.brand {
+  box-shadow: none;
 }
 
 /* Scrollbar */
