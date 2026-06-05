@@ -239,7 +239,6 @@ export default withPwa(defineConfig({
     ar: {
       lang: 'ar',
       label: 'العربية',
-      title: 'دليل Realme 8 الشامل',
       dir: 'rtl',
 
       themeConfig: {

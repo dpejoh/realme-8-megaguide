@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: Realme 8 Mega Guide
+  name: دليل Realme 8 الشامل
   tagline: افتح قفل bootloader، احصل على صلاحية الجذر، وقم بتثبيت الرومات المخصصة على Realme 8 (RMX3085)
   actions:
     - theme: brand
