@@ -1,0 +1,109 @@
+# अब काम नहीं करता, REALME ने R8 को सर्वर से हटा दिया है
+
+> [!Warning]
+> **यह विधि अब काम नहीं करती है। ये चरण केवल संदर्भ के लिए रखे गए हैं।**
+
+प्रश्न? Telegram पर [Realme 8 AOSP](https://t.me/Realme8AOSPGroup) को संदेश भेजें या नई [Github Discussion](https://github.com/driedpampas/realme-8-megaguide/discussions/new/choose) शुरू करें।
+
+पहले से अनलॉक है? [कस्टम रिकवरी और ROM स्थापित करना](/hi/guides/custom-rom) पर जाएँ।
+
+**अस्वीकरण:** कानून द्वारा अनुमत कोई वारंटी नहीं। Windows 7 समर्थित नहीं है।
+
+## आवश्यक शर्तें
+
+- [Python 3.10+](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5)
+- [Mediatek USB driver](https://drive.google.com/file/d/1UExJQxI1DmBGeDoYPul5YTXitOnsU6zx/view?usp=sharing)
+- [USBDk](https://github.com/daynix/UsbDk/releases/download/v1.00-22/UsbDk_1.0.22_x64.msi)
+- [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)
+- [SP Flash tool](https://drive.google.com/file/d/11XeUnCYtARZg2kx7J2JWWeLULieSIYrx/view?usp=sharing)
+- [adb tools](https://dl.google.com/android/repository/platform-tools-latest-windows.zip)
+- फर्मवेयर: [C.18](https://drive.google.com/uc?id=1MPLnD4ofrW50u8V4C5I5srGucHJg60XW&export=download)
+- APK: [डीप टेस्टिंग](https://drive.google.com/file/d/1pESMmJef6Gm9YlJAE7OA_DDNnhFn3Jpz/view?usp=sharing)
+
+## अपने सिस्टम पार्टीशन का बैकअप लें
+
+> [!CAUTION]
+> क्या आपने पहले ही बैकअप ले लिया है? यदि नहीं, तो [बैकअप गाइड](/hi/guides/backup) का पालन करें
+
+## अनलॉक करना
+
+### आवश्यक शर्तें स्थापित करना
+
+1. **Mediatek USB**
+   1. [Mediatek USB](https://drive.google.com/file/d/1UExJQxI1DmBGeDoYPul5YTXitOnsU6zx/view?usp=sharing) ड्राइवर को **एक्सट्रैक्ट** करें और उसके फ़ोल्डर में जाएँ।
+   2. **.inf** फ़ाइल ढूँढें, राइट क्लिक करें और इंस्टॉल दबाएँ
+   ![](https://i.imgur.com/niVRaOn.png)
+2. [USBDk](https://github.com/daynix/UsbDk/releases/) इंस्टॉल करें
+3. [Microsoft Store से Python](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5) इंस्टॉल करें
+
+### RUI3 C.18 फ्लैश करें
+
+1. [MTK Client आर्काइव](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763) को **एक्सट्रैक्ट** करें और उसके फ़ोल्डर में जाएँ
+2. [MTK Client's](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763) फ़ोल्डर में कंसोल खोलें
+![](https://i.imgur.com/RJtobaI.png)
+
+3. निर्भरताएँ इंस्टॉल करें और पेलोड भेजें:
+
+```bash
+python -m pip install -r requirements.txt
+python mtk payload
+```
+
+यह इस तरह दिखना चाहिए:
+![](https://i.imgur.com/WSQsVj1.png)
+
+4. सुनिश्चित करें कि आपका फ़ोन बंद है, दोनों **Vol+, Vol-** दबाए रखें और USB केबल कनेक्ट करें। आप कुछ इस तरह देखेंगे:
+![](https://i.imgur.com/lr7HIN0.png)
+
+5. फ़ोन अब BROM मोड में है। [SP Flash tool](https://drive.google.com/file/d/11XeUnCYtARZg2kx7J2JWWeLULieSIYrx/view?usp=sharing) `flash_tool.exe` चलाएँ
+
+6. `Options > Option...` पर क्लिक करें और सुनिश्चित करें कि सही **COM Port** चुना गया है, UART सक्षम है और बॉड रेट **921600** पर सेट है।
+
+![](https://i.imgur.com/hnMsyeN.png)
+
+7. [C.18 फर्मवेयर](https://drive.google.com/uc?id=1MPLnD4ofrW50u8V4C5I5srGucHJg60XW&export=download) प्राप्त करें और इसे अनपैक करें
+8. फर्मवेयर के फ़ोल्डर से `MT6785_Android_scatter.txt` लोड करें
+   ![](https://i.imgur.com/8APQvkx.png)
+
+> [!CAUTION] 
+> **`Download Only` मोड रखना न भूलें** अन्यथा आप महत्वपूर्ण पार्टीशन खो देंगे।
+
+![](https://i.imgur.com/M3aUNBs.png =300x)
+
+9. इस प्रक्रिया में 15-20 मिनट तक लग सकते हैं। आरंभ करने के लिए `Download` पर क्लिक करें ([**कोई प्रगति नहीं? मुझे क्लिक करें**](https://github.com/driedpampas/realme-8-megaguide/wiki/FAQ)). सुनिश्चित करें कि आप अपना फ़ोन डिस्कनेक्ट न करें।
+![](https://i.imgur.com/uSXflCJ.png =300x)
+
+10. यदि सब कुछ ठीक रहा, तो यह इस तरह दिखना चाहिए
+![](https://i.imgur.com/qeJWt3a.png =200x)
+
+11. कुछ भी करने से पहले, **सुरक्षा के लिए फ़ोन को वाइप करें।** **Vol- और पावर बटन** दबाए रखें, रिकवरी में wipe data चुनें, और फिर **Format Data** चुनें।
+
+### डीप टेस्टिंग से बूटलोडर अनलॉक करना
+
+1. डीप टेस्टिंग ऐप डाउनलोड और इंस्टॉल करें, "Apply Now" पर टैप करें और समझौता स्वीकार करें, आपको अब यह देखना चाहिए:
+![](https://i.imgur.com/MTeSOl3.png =300x)
+
+2. ऐप बंद करें और रीसेंट से हटा दें। ऐप फिर से खोलें और Query verification status पर टैप करें। आपको अब यह देखना चाहिए:
+![](https://i.imgur.com/FEN05v9.png =300x)
+
+3. "Start deep testing" पर टैप करें और डिवाइस फास्टबूट मोड में रीबूट हो जाएगा:
+![](https://i.imgur.com/G6NeOCQ.png =300x)
+
+4. डिवाइस फास्टबूट मोड में रीबूट होगा। बूटलोडर अनलॉक करने के लिए डिवाइस को PC में प्लग करें और चलाएँ:
+
+```bash
+fastboot flashing unlock
+```
+
+आपको यह देखना चाहिए:
+![](https://i.imgur.com/iYp4XAP.png =600x)
+
+5. `Volume up` दबाएँ और बूटलोडर अनलॉक हो जाएगा।
+
+## कस्टम रिकवरी और ROM स्थापित करना
+
+[कस्टम ROM गाइड](/hi/guides/custom-rom) पर जाएँ।
+
+## रूटिंग
+
+[रूटिंग](/hi/guides/rooting) पर जाएँ।
