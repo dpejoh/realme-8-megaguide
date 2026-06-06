@@ -24,9 +24,9 @@
 >
 > **ملاحظة:** بعض الرومات المخصصة تتضمن البرنامج الثابت الأساسي في ملف zip. إذا كان رومك يفعل ذلك، فتخط خطوة القاعدة وومض الروم مباشرة.
 
-- الرومات: [realme8.dry.nl.eu.org](https://realme8.dry.nl.eu.org) أو [مجموعة تيليجرام](https://t.me/Realme8AOSPGroup)
+- الرومات: [مجموعة تيليجرام](https://t.me/Realme8AOSPGroup)
 - GApps: [MindTheGApps A13](https://androidfilehost.com/?fid=4279422670115734716) (إذا لزم الأمر)
-- أدوات الاسترداد: [صفحة أدوات الاسترداد](/ar/reference/recoveries) أو [الموقع](https://realme8.dry.nl.eu.org/Recoveries)
+- أدوات الاسترداد: [صفحة أدوات الاسترداد](/ar/reference/recoveries)
 
 ## إعادة التشغيل إلى fastboot
 

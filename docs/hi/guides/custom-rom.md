@@ -24,9 +24,9 @@
 >
 > **नोट:** कुछ कस्टम ROM में बेस फर्मवेयर ज़िप में शामिल होता है। यदि आपके में है, तो बेस स्टेप छोड़ें और सीधे ROM फ्लैश करें।
 
-- ROM: [realme8.dry.nl.eu.org](https://realme8.dry.nl.eu.org) या [Telegram ग्रुप](https://t.me/Realme8AOSPGroup)
+- ROMs: [Telegram ग्रुप](https://t.me/Realme8AOSPGroup)
 - GApps: [MindTheGApps A13](https://androidfilehost.com/?fid=4279422670115734716) (यदि आवश्यक हो)
-- रिकवरी: [रिकवरी पेज](/hi/reference/recoveries) या [वेबसाइट](https://realme8.dry.nl.eu.org/Recoveries)
+- रिकवरी: [रिकवरी पेज](/hi/reference/recoveries)
 
 ## फास्टबूट में रीबूट करना
 

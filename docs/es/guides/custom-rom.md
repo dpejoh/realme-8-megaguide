@@ -24,9 +24,9 @@
 >
 > **Nota:** algunas ROMs personalizadas incluyen el firmware base en el zip. Si la tuya lo incluye, salta el paso del firmware base y flashea la ROM directamente.
 
-- ROMs: [realme8.dry.nl.eu.org](https://realme8.dry.nl.eu.org) o [grupo de Telegram](https://t.me/Realme8AOSPGroup)
+- ROMs: [grupo de Telegram](https://t.me/Realme8AOSPGroup)
 - GApps: [MindTheGApps A13](https://androidfilehost.com/?fid=4279422670115734716) (si es necesario)
-- Recovery: [Página de Recoveries](/es/reference/recoveries) o el [sitio web](https://realme8.dry.nl.eu.org/Recoveries)
+- Recovery: [Página de Recuperaciones](/es/reference/recoveries)
 
 ## Reiniciar a fastboot
 

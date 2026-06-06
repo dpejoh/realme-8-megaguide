@@ -1,6 +1,6 @@
 # Recoveries
 
-[Verifique downloads aqui](https://realme8.dry.nl.eu.org/Recoveries)
+
 
 ## Recoveries personalizadas
 
@@ -17,7 +17,6 @@
 
 | Nome da Recovery | Compatibilidade RealmeUI | Download |
 | :--------------: | :----------------------: | :------: |
-| LineageOS        | RUI 3, 4                 | [Download](https://dry.nl.eu.org/lineage-nashc)                                          |
 | LeafOS           | RUI 3, 4                 | [Download](https://github.com/HowWof/releases/releases/download/leaf-2.0.1/recovery.img) |
 | VoltageOS        | RUI 3, 4                 | [Download](https://drive.google.com/file/d/1Kmml4urzwgiexMPDCOgggPooYRD_xE6e/view)       |
 | SparkOS          | RUI 3, 4                 | [Download](https://drive.google.com/file/d/1kEUe9QnVFl3gw5GBfvOzbQ0kcZPsDb8e/view)       |

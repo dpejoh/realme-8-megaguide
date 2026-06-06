@@ -1,6 +1,6 @@
 # रिकवरी
 
-[डाउनलोड के लिए यहाँ देखें](https://realme8.dry.nl.eu.org/Recoveries)
+
 
 ## कस्टम रिकवरी
 
@@ -17,7 +17,6 @@
 
 | रिकवरी नाम    | RealmeUI संगतता | डाउनलोड |
 | :-----------: | :--------------------: | :------: |
-| LineageOS     | RUI 3, 4               | [डाउनलोड](https://dry.nl.eu.org/lineage-nashc)                                          |
 | LeafOS        | RUI 3, 4               | [डाउनलोड](https://github.com/HowWof/releases/releases/download/leaf-2.0.1/recovery.img) |
 | VoltageOS     | RUI 3, 4               | [डाउनलोड](https://drive.google.com/file/d/1Kmml4urzwgiexMPDCOgggPooYRD_xE6e/view)       |
 | SparkOS       | RUI 3, 4               | [डाउनलोड](https://drive.google.com/file/d/1kEUe9QnVFl3gw5GBfvOzbQ0kcZPsDb8e/view)       |

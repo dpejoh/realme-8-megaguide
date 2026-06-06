@@ -1,6 +1,6 @@
 # 恢复
 
-[在此处查看下载](https://realme8.dry.nl.eu.org/Recoveries)
+
 
 ## 自定义恢复
 
@@ -17,7 +17,6 @@
 
 | 恢复名称      | RealmeUI 兼容性 | 下载 |
 | :----------: | :------------: | :--: |
-| LineageOS    | RUI 3, 4       | [下载](https://dry.nl.eu.org/lineage-nashc)                                          |
 | LeafOS       | RUI 3, 4       | [下载](https://github.com/HowWof/releases/releases/download/leaf-2.0.1/recovery.img) |
 | VoltageOS    | RUI 3, 4       | [下载](https://drive.google.com/file/d/1Kmml4urzwgiexMPDCOgggPooYRD_xE6e/view)       |
 | SparkOS      | RUI 3, 4       | [下载](https://drive.google.com/file/d/1kEUe9QnVFl3gw5GBfvOzbQ0kcZPsDb8e/view)       |

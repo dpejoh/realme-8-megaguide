@@ -24,9 +24,9 @@
 >
 > **注意：** 某些自定义 ROM 的 zip 包中已包含基础固件。如果您的 ROM 已包含，请跳过基础步骤直接刷写 ROM。
 
-- ROM：[realme8.dry.nl.eu.org](https://realme8.dry.nl.eu.org) 或 [Telegram 群组](https://t.me/Realme8AOSPGroup)
+- ROM： [Telegram 群组](https://t.me/Realme8AOSPGroup)
 - GApps：[MindTheGApps A13](https://androidfilehost.com/?fid=4279422670115734716)（如果需要）
-- 恢复：[恢复页面](/zh-CN/reference/recoveries) 或 [网站](https://realme8.dry.nl.eu.org/Recoveries)
+- 恢复：[恢复页面](/zh-CN/reference/recoveries)
 
 ## 重启到 fastboot
 

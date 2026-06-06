@@ -1,6 +1,6 @@
 # Kernels
 
-[Check for downloads here](https://realme8.dry.nl.eu.org/Kernels)
+
 
 | Name | Developer |
 | ---- | --------- |
