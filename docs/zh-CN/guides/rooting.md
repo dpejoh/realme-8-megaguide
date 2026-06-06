@@ -86,8 +86,6 @@ fastboot reboot
 
 ### 所需文件
 
-> [!TIP]
-> 请参阅[内核](/zh-CN/reference/kernels)了解更多信息
 
 - [KernelSU zip](https://github.com/HowWof/KernelSU_Builder/releases/latest)
 - [KSU manager APK](https://github.com/tiann/KernelSU/releases/download/v1.0.0/KernelSU_v1.0.0_11874-release.apk)

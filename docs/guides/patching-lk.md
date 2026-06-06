@@ -27,8 +27,6 @@ The `lk.bin` file appears in the MTK Client folder.
 python mtk w lk lk-patched.bin
 ```
 
-> [!IMPORTANT]
-> Check [Manual patching](https://github.com/driedpampas/realme-8-megaguide/wiki/Patching-LK-(local)) if the website does not work.
 
 > [!TIP]
 > Check the [FAQ](https://github.com/driedpampas/realme-8-megaguide/wiki/FAQ#4-i-patched-my-lk-but-the-phone-still-says-fastboot_verify_fail) if something does not work.

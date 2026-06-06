@@ -25,7 +25,7 @@
 > **Nota:** algumas ROMs personalizadas incluem a firmware base no zip. Se a sua incluir, pule a etapa da base e faça flash da ROM diretamente.
 
 - ROMs: [grupo do Telegram](https://t.me/Realme8AOSPGroup)
-- GApps: [MindTheGApps A13](https://androidfilehost.com/?fid=4279422670115734716) (se necessário)
+- GApps: [MindTheGApps](https://github.com/MindTheGapps) (se necessário)
 - Recovery: [Página de Recuperações](/pt-BR/reference/recoveries)
 
 ## Reiniciando para fastboot

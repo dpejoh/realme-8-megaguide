@@ -27,8 +27,6 @@ python mtk r lk lk.bin
 python mtk w lk lk-patched.bin
 ```
 
-> [!IMPORTANT]
-> راجع [التصحيح اليدوي](https://github.com/driedpampas/realme-8-megaguide/wiki/Patching-LK-(local)) إذا لم يعمل الموقع.
 
 > [!TIP]
 > راجع [الأسئلة الشائعة](https://github.com/driedpampas/realme-8-megaguide/wiki/FAQ#4-i-patched-my-lk-but-the-phone-still-says-fastboot_verify_fail) إذا كان هناك شيء لا يعمل.

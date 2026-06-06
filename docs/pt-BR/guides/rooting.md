@@ -86,8 +86,6 @@ Selecione `Uninstall > Complete uninstall` no aplicativo Magisk Manager.
 
 ### Você vai precisar
 
-> [!TIP]
-> Consulte [Kernels](/pt-BR/reference/kernels) para mais informações.
 
 - [KernelSU zip](https://github.com/HowWof/KernelSU_Builder/releases/latest)
 - [APK do KSU manager](https://github.com/tiann/KernelSU/releases/download/v1.0.0/KernelSU_v1.0.0_11874-release.apk)
