@@ -31,43 +31,15 @@
 
 ## 刷写
 
-1. 在 [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763) 的文件夹中打开控制台
-   ![](https://i.imgur.com/RJtobaI.png)
-2. 发送 payload：
+按照 [SP Flash Tool](/zh-CN/reference/flash-tool) 的步骤操作，然后：
 
-```bash
-python mtk payload
-```
-
-   ![](https://i.imgur.com/WSQsVj1.png)
-3. 关闭手机，同时按住 **Vol+、Vol-** 并连接 USB 线缆。
-4. MTK Client 将在 BROM 模式下检测到设备：
-   ![](https://i.imgur.com/lr7HIN0.png)
-5. 运行 SP Flash tool（Windows 上为 `flash_tool.exe`，Linux 上为 `flash_tool`）
-6. 点击 `Options > Option...`，选择正确的 **COM 端口**，启用 UART，将波特率设置为 **921600**。
-   ![](https://i.imgur.com/hnMsyeN.png)
-7. 获取 **C.18** 或 **F.11** 固件并解压
-8. 从固件中加载 scatter 文件：
-   ![](https://i.imgur.com/VTwpXzC.png)
-
-> [!IMPORTANT]
-> 记得取消勾选：
-> - **opporeserve2** [签名分区]
-> - **cdt_engineering** [数字保修码]
-
-> [!CAUTION]
-> 将模式设置为 **`Download Only`**，否则您将丢失关键分区。
-> ![](https://i.imgur.com/M3aUNBs.png =300x)
-
-9. 将手机放在稳定表面上。该过程需要 15-20 分钟。点击 `Download`。[**没有进度？**](https://github.com/driedpampas/realme-8-megaguide/wiki/FAQ)
-   ![](https://i.imgur.com/uSXflCJ.png =300x)
-10. 完成后效果如下：
-    ![](https://i.imgur.com/qeJWt3a.png =200x)
+**固件：** 使用 **C.18** 或 **F.11**
+**Scatter 文件：** 加载您下载的固件中的 scatter 文件
 
 > [!TIP]
 > 如果某些操作不起作用，请查看[常见问题](https://github.com/driedpampas/realme-8-megaguide/wiki/FAQ)。
 
-11. **为安全起见请擦除手机。** 同时按住 **Vol- + 电源键**，进入恢复模式，选择 **格式化数据**。
+**请擦除手机。** 同时按住 **Vol- + 电源键**，进入恢复模式，选择 **格式化数据**。
 
 > [!IMPORTANT]
 > **只有在刷写完所选的基础固件后，才能继续后续步骤。**

@@ -11,7 +11,7 @@
 
 ## 前提条件
 
-- [Python 3.10+](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5)
+- [Python 3.10+](https://www.python.org/downloads/)
 - [联发科 USB 驱动](https://drive.google.com/file/d/1UExJQxI1DmBGeDoYPul5YTXitOnsU6zx/view?usp=sharing)
 - [USBDk](https://github.com/daynix/UsbDk/releases/download/v1.00-22/UsbDk_1.0.22_x64.msi)
 - [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)
@@ -37,49 +37,19 @@
    2. 找到 **.inf** 文件，右键点击并选择安装
    ![](https://i.imgur.com/niVRaOn.png)
 2. 安装 [USBDk](https://github.com/daynix/UsbDk/releases/)
-3. 从 [Microsoft Store 安装 Python](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5)
+3. 从 [python.org 安装 Python](https://www.python.org/downloads/)（或从 [Microsoft Store](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5) 作为替代）
 
 ### 刷写 RUI3 C.18
 
-1. **解压**并进入 [MTK Client 压缩包](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)的文件夹
-2. 在 [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763) 的文件夹中打开控制台
-![](https://i.imgur.com/RJtobaI.png)
+按照 [SP Flash Tool](/zh-CN/reference/flash-tool) 的步骤，注意以下变化：
 
-3. 安装依赖项并发送 payload：
+- **固件：** 使用 [C.18](https://drive.google.com/uc?id=1MPLnD4ofrW50u8V4C5I5srGucHJg60XW&export=download)
+- **scatter 文件：** 从固件文件夹加载 `MT6785_Android_scatter.txt`
 
-```bash
-python -m pip install -r requirements.txt
-python mtk payload
-```
+> [!CAUTION]
+> **记得使用 `Download Only` 模式**，否则将丢失关键分区。
 
-效果如下：
-![](https://i.imgur.com/WSQsVj1.png)
-
-4. 确保手机已关机，同时按住 **Vol+、Vol-** 并连接 USB 线缆。您将看到类似这样的画面：
-![](https://i.imgur.com/lr7HIN0.png)
-
-5. 手机现在处于 BROM 模式。运行 [SP Flash tool](https://drive.google.com/file/d/11XeUnCYtARZg2kx7J2JWWeLULieSIYrx/view?usp=sharing) `flash_tool.exe`
-
-6. 点击 `Options > Option...`，确保选择了正确的 **COM 端口**，启用 UART 并将波特率设置为 **921600**。
-
-![](https://i.imgur.com/hnMsyeN.png)
-
-7. 获取 [C.18 固件](https://drive.google.com/uc?id=1MPLnD4ofrW50u8V4C5I5srGucHJg60XW&export=download)并解压
-8. 从固件文件夹中加载 `MT6785_Android_scatter.txt`
-   ![](https://i.imgur.com/8APQvkx.png)
-
-> [!CAUTION] 
-> **记得设置为 `Download Only` 模式**否则您将丢失关键分区。
-
-![](https://i.imgur.com/M3aUNBs.png =300x)
-
-9. 此过程需要 15-20 分钟。要开始，请点击 `Download`（[**没有进度？点击此处**](https://github.com/driedpampas/realme-8-megaguide/wiki/FAQ)）。确保不要断开手机连接。
-![](https://i.imgur.com/uSXflCJ.png =300x)
-
-10. 一切顺利的话，效果如下：
-![](https://i.imgur.com/qeJWt3a.png =200x)
-
-11. 在进行任何操作之前，**为安全起见请擦除手机。** 同时按住 **Vol- 和电源键**，在恢复菜单中选择清除数据，然后选择 **格式化数据**。
+完成后，**请擦除手机。** 按住 **Vol- + 电源键**，进入 Recovery，选择 **Format Data**。
 
 ### 使用深度测试解锁引导加载程序
 

@@ -20,7 +20,7 @@ python mtk r lk lk.bin
 
 `lk.bin` 文件将出现在 MTK Client 文件夹中。
 
-4. 访问 [lkpatcher.cxwof.dev](http://lkpatcher.cxwof.dev/)，上传您的 `lk.bin`，下载 `lk-patched.bin`。将其移动到 MTK Client 文件夹。
+4. 访问 [lkpatcher.r0rt1z2.com](https://lkpatcher.r0rt1z2.com/)，上传您的 `lk.bin`，下载 `lk-patched.bin`。将其移动到 MTK Client 文件夹。
 5. 刷写修补后的 lk：
 
 ```bash

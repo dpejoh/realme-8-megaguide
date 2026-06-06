@@ -19,7 +19,7 @@
 
 ### Windows
 
-- [Python 3.10+](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5)
+- [Python 3.10+](https://www.python.org/downloads/)
 - [联发科 USB 驱动](https://drive.google.com/file/d/1UExJQxI1DmBGeDoYPul5YTXitOnsU6zx/view?usp=sharing)
 - [USBDk](https://github.com/daynix/UsbDk/releases/download/v1.00-22/UsbDk_1.0.22_x64.msi)
 - [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)
@@ -39,7 +39,7 @@
 
 #### Windows
 
-从 [Microsoft Store 安装 Python](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5)。安装联发科 USB 驱动和 USBDk。下载并解压 [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)，然后在命令提示符中运行：
+从 [python.org 安装 Python](https://www.python.org/downloads/)（或从 [Microsoft Store](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5) 作为替代）。安装联发科 USB 驱动和 USBDk。下载并解压 [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)，然后在命令提示符中运行：
 
 ```bash
 pip3 install -r requirements.txt
@@ -58,42 +58,19 @@ python -m pip install -r requirements.txt
 
 ## 降级到 RUI2
 
-1. **解压**并进入 [MTK Client 压缩包](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)的文件夹
-2. 解压后进入文件夹两级深度即可找到 `Requirements.txt` 文件。现在在文件夹中打开控制台：
-	![](https://i.imgur.com/RJtobaI.png)
-3. 安装依赖项并发送 payload：
+按照 [SP Flash Tool](/zh-CN/reference/flash-tool) 的步骤，注意以下变化：
 
-```bash
-python -m pip install -r requirements.txt
-python mtk payload
-```
+- **固件：** 使用 [Haadi 的 A.19 RUI2](https://drive.google.com/file/d/1Iy2hwZ0mHQtpHgpyRDRHMZv13FTTvups/view?usp=share_link) 而非 C.18/F.11
+- **scatter 文件：** 从 A.19 固件文件夹加载 `scatter.txt`
+- **需要取消勾选的分区：**
 
-效果如下：
-	![](https://i.imgur.com/WSQsVj1.png)
-4. 确保手机已关机，同时按住 **Vol+、Vol-** 并连接 USB 线缆。您将看到类似这样的画面：
-	![](https://i.imgur.com/lr7HIN0.png)
-5. 手机现在处于 BROM 模式。运行 SP Flash tool（Windows 上为 `flash_tool.exe`，Linux 上为 `flash_tool`）
-6. 点击 `Options > Option...`，确保选择了正确的 **COM 端口**，启用 UART 并将波特率设置为 **921600**。
-	![](https://i.imgur.com/hnMsyeN.png)
-7. 获取 [Haadi 的 A.19 RUI2 固件](https://drive.google.com/file/d/1Iy2hwZ0mHQtpHgpyRDRHMZv13FTTvups/view?usp=share_link)并解压
-8. 从 Haadi 的固件中加载 `scatter.txt`
-    ![](https://i.imgur.com/VTwpXzC.png)
-	
 > [!IMPORTANT]
 > **记得取消勾选：**
-| opporeserve2 [签名分区] | cdt_engineering [数字保修码] |
-| --- | --- |
-| <img src="https://i.imgur.com/9Kp65P7.png" width="150"> | <img src="https://i.imgur.com/S6XOitJ.png" width="150"> |
+> | opporeserve2 [Signed partition] | cdt_engineering [Digital warranty codes] |
+> | --- | --- |
+> | <img src="https://i.imgur.com/9Kp65P7.png" width="150"> | <img src="https://i.imgur.com/S6XOitJ.png" width="150"> |
 
-> [!CAUTION]
-> **记得设置为 `Download Only` 模式**否则您将丢失关键分区。
-    ![](https://i.imgur.com/M3aUNBs.png =300x)
-
-9. 避免移动手机以防断开连接。此过程需要 15-20 分钟。要将 A.19 刷入手机，请点击 `Download`。
-	![](https://i.imgur.com/uSXflCJ.png =300x)
-10. 一切顺利的话，效果如下：
-	![](https://i.imgur.com/qeJWt3a.png =200x)
-11. 在进行任何操作之前，**为安全起见请擦除手机。** 同时按住 **Vol- 和电源键**，在恢复菜单中选择清除数据，然后选择 **格式化数据**。
+完成后，**请擦除手机。** 按住 **Vol- + 电源键**，进入 Recovery，选择 **Format Data**。
 
 ## 解锁引导加载程序
 
@@ -127,7 +104,7 @@ python mtk reset
 > **首次开机大约需要 5-20 分钟。**
 > **您将看到 `dm-verity corruption` 和 `orange state` 警告。按*电源键*继续。这些是正常现象，将在[修补 LK](/zh-CN/guides/patching-lk) 步骤中修复。**
 
-6. 设置手机，开启**开发者选项**，并在 `OEM unlocking` 下验证引导加载程序已解锁。
+6. 设置手机，开启**开发者选项**。将 `OEM unlocking` 关闭并重新打开以确保它已激活。
 
 > [!TIP]
 > 如果某些操作不起作用或您有问题，请查看[常见问题](https://github.com/driedpampas/realme-8-megaguide/wiki/FAQ)。

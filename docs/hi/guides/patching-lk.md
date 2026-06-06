@@ -20,7 +20,7 @@ python mtk r lk lk.bin
 
 `lk.bin` फ़ाइल MTK Client फ़ोल्डर में दिखाई देगी।
 
-4. [lkpatcher.cxwof.dev](http://lkpatcher.cxwof.dev/) पर जाएँ, अपना `lk.bin` अपलोड करें, और `lk-patched.bin` डाउनलोड करें। इसे MTK Client फ़ोल्डर में ले जाएँ।
+4. [lkpatcher.r0rt1z2.com](https://lkpatcher.r0rt1z2.com/) पर जाएँ, अपना `lk.bin` अपलोड करें, और `lk-patched.bin` डाउनलोड करें। इसे MTK Client फ़ोल्डर में ले जाएँ।
 5. पैच किए गए lk को फ्लैश करें:
 
 ```bash

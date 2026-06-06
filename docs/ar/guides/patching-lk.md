@@ -20,7 +20,7 @@ python mtk r lk lk.bin
 
 سيظهر ملف `lk.bin` في مجلد MTK Client.
 
-4. اذهب إلى [lkpatcher.cxwof.dev](http://lkpatcher.cxwof.dev/)، ارفع ملف `lk.bin` الخاص بك، وقم بتنزيل `lk-patched.bin`. انقله إلى مجلد MTK Client.
+4. اذهب إلى [lkpatcher.r0rt1z2.com](https://lkpatcher.r0rt1z2.com/)، ارفع ملف `lk.bin` الخاص بك، وقم بتنزيل `lk-patched.bin`. انقله إلى مجلد MTK Client.
 5. قم بوميض lk المُصحّح:
 
 ```bash

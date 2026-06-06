@@ -19,7 +19,7 @@
 
 ### ويندوز
 
-- [Python 3.10+](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5)
+- [Python 3.10+](https://www.python.org/downloads/)
 - [تعريف USB ميديا تيك](https://drive.google.com/file/d/1UExJQxI1DmBGeDoYPul5YTXitOnsU6zx/view?usp=sharing)
 - [USBDk](https://github.com/daynix/UsbDk/releases/download/v1.00-22/UsbDk_1.0.22_x64.msi)
 - [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)
@@ -39,7 +39,7 @@
 
 #### ويندوز
 
-قم بتثبيت [Python من متجر Microsoft](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5). قم بتثبيت تعريف USB ميديا تيك و USBDk. قم بتنزيل وفك ضغط [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)، ثم شغّل في موجه الأوامر:
+قم بتثبيت [Python من python.org](https://www.python.org/downloads/) (أو [متجر Microsoft](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5) كبديل). قم بتثبيت تعريف USB ميديا تيك و USBDk. قم بتنزيل وفك ضغط [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)، ثم شغّل في موجه الأوامر:
 
 ```bash
 pip3 install -r requirements.txt
@@ -58,42 +58,19 @@ python -m pip install -r requirements.txt
 
 ## الرجوع إلى RUI2
 
-1. **فك ضغط** وادخل إلى مجلد [أرشيف MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)
-2. بعد فك الضغط، ادخل إلى المجلد عمقين للعثور على ملف `Requirements.txt`. الآن افتح وحدة التحكم في المجلد:
-	![](https://i.imgur.com/RJtobaI.png)
-3. قم بتثبيت التبعيات وإرسال الـ payload:
+اتبع إجراءات [SP Flash Tool](/ar/reference/flash-tool)، مع هذه التغييرات:
 
-```bash
-python -m pip install -r requirements.txt
-python mtk payload
-```
-
-يجب أن يبدو هكذا:
-	![](https://i.imgur.com/WSQsVj1.png)
-4. تأكد من إيقاف تشغيل هاتفك، اضغط مع الاستمرار على **Vol+، Vol-** وقم بتوصيل كابل USB. سترى شيئًا كهذا:
-	![](https://i.imgur.com/lr7HIN0.png)
-5. الهاتف الآن في وضع BROM. شغّل SP Flash tool (`flash_tool.exe` على ويندوز، `flash_tool` على لينكس)
-6. انقر على `Options > Option...` وتأكد من تحديد **المنفذ COM** الصحيح، وتفعيل UART، وضبط معدل الباود على **921600**.
-	![](https://i.imgur.com/hnMsyeN.png)
-7. احصل على [برنامج A.19 RUI2 من Haadi](https://drive.google.com/file/d/1Iy2hwZ0mHQtpHgpyRDRHMZv13FTTvups/view?usp=share_link) وقم بفك ضغطه
-8. حمّل `scatter.txt` من برنامج Haadi
-    ![](https://i.imgur.com/VTwpXzC.png)
+- **البرنامج الثابت:** استخدم [A.19 RUI2 لـ Haadi](https://drive.google.com/file/d/1Iy2hwZ0mHQtpHgpyRDRHMZv13FTTvups/view?usp=share_link) بدلاً من C.18/F.11
+- **ملف scatter:** حمل `scatter.txt` من مجلد البرنامج الثابت A.19
+- **الأقسام التي يجب إلغاء تحديدها:**
 
 > [!IMPORTANT]
 > **تذكر إلغاء تحديد:**
-| opporeserve2 [قسم موقع] | cdt_engineering [رموز الضمان الرقمية] |
-| --- | --- |
-| <img src="https://i.imgur.com/9Kp65P7.png" width="150"> | <img src="https://i.imgur.com/S6XOitJ.png" width="150"> |
+> | opporeserve2 [Signed partition] | cdt_engineering [Digital warranty codes] |
+> | --- | --- |
+> | <img src="https://i.imgur.com/9Kp65P7.png" width="150"> | <img src="https://i.imgur.com/S6XOitJ.png" width="150"> |
 
-> [!CAUTION]
-> **تذكر ضبط الوضع على `Download Only`** أو ستفقد الأقسام الهامة.
-   ![](https://i.imgur.com/M3aUNBs.png =300x)
-
-9. تجنب تحريك الهاتف حتى لا ينقطع أي اتصال. ستستغرق هذه العملية حتى 15-20 دقيقة. لتثبيت A.19 على هاتفك، انقر على `Download`.
-	![](https://i.imgur.com/uSXflCJ.png =300x)
-10. إذا سارت الأمور بشكل جيد، يجب أن يبدو هكذا
-	![](https://i.imgur.com/qeJWt3a.png =200x)
-11. قبل فعل أي شيء، **امسح الهاتف للسلامة.** اضغط مع الاستمرار على **Vol- وزر الطاقة**، في وضع الاسترداد اختر مسح البيانات، ثم اختر **Format Data**.
+عند الانتهاء، **امسح الهاتف.** اضغط مع الاستمرار على **Vol- + Power**، ادخل إلى الاسترداد، اختر **Format Data**.
 
 ## فتح قفل bootloader
 
@@ -127,7 +104,7 @@ python mtk reset
 > **أول تشغيل سيستغرق حوالي 5-20 دقيقة.**
 > **سترى تحذيرات `dm-verity corruption` و `orange state`. اضغط على *زر الطاقة* للمتابعة. هذه تحذيرات طبيعية وسيتم إصلاحها في خطوة [تصحيح LK](/ar/guides/patching-lk).**
 
-6. قم بإعداد هاتفك وقم بتفعيل **خيارات المطور** وتحقق من أن bootloader مفتوح تحت `OEM unlocking`
+6. قم بإعداد هاتفك وقم بتفعيل **خيارات المطور**. قم بإيقاف تشغيل `OEM unlocking` وتشغيله مرة أخرى للتأكد من أنه نشط.
 
 > [!TIP]
 > راجع [الأسئلة الشائعة](https://github.com/driedpampas/realme-8-megaguide/wiki/FAQ) إذا كان هناك شيء لا يعمل أو لديك أسئلة.

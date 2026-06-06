@@ -11,7 +11,7 @@
 
 ## आवश्यक शर्तें
 
-- [Python 3.10+](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5)
+- [Python 3.10+](https://www.python.org/downloads/)
 - [Mediatek USB driver](https://drive.google.com/file/d/1UExJQxI1DmBGeDoYPul5YTXitOnsU6zx/view?usp=sharing)
 - [USBDk](https://github.com/daynix/UsbDk/releases/download/v1.00-22/UsbDk_1.0.22_x64.msi)
 - [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)
@@ -37,49 +37,19 @@
    2. **.inf** फ़ाइल ढूँढें, राइट क्लिक करें और इंस्टॉल दबाएँ
    ![](https://i.imgur.com/niVRaOn.png)
 2. [USBDk](https://github.com/daynix/UsbDk/releases/) इंस्टॉल करें
-3. [Microsoft Store से Python](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5) इंस्टॉल करें
+3. [Python को python.org से](https://www.python.org/downloads/) इंस्टॉल करें (या [Microsoft Store](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5) वैकल्पिक रूप से)
 
 ### RUI3 C.18 फ्लैश करें
 
-1. [MTK Client आर्काइव](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763) को **एक्सट्रैक्ट** करें और उसके फ़ोल्डर में जाएँ
-2. [MTK Client's](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763) फ़ोल्डर में कंसोल खोलें
-![](https://i.imgur.com/RJtobaI.png)
+[SP Flash Tool](/hi/reference/flash-tool) प्रक्रिया का पालन करें, इन बदलावों के साथ:
 
-3. निर्भरताएँ इंस्टॉल करें और पेलोड भेजें:
+- **फर्मवेयर:** [C.18](https://drive.google.com/uc?id=1MPLnD4ofrW50u8V4C5I5srGucHJg60XW&export=download) उपयोग करें
+- **स्कैटर फ़ाइल:** फर्मवेयर फ़ोल्डर से `MT6785_Android_scatter.txt` लोड करें
 
-```bash
-python -m pip install -r requirements.txt
-python mtk payload
-```
+> [!CAUTION]
+> **`Download Only` मोड रखना याद रखें** या आप महत्वपूर्ण पार्टीशन खो देंगे।
 
-यह इस तरह दिखना चाहिए:
-![](https://i.imgur.com/WSQsVj1.png)
-
-4. सुनिश्चित करें कि आपका फ़ोन बंद है, दोनों **Vol+, Vol-** दबाए रखें और USB केबल कनेक्ट करें। आप कुछ इस तरह देखेंगे:
-![](https://i.imgur.com/lr7HIN0.png)
-
-5. फ़ोन अब BROM मोड में है। [SP Flash tool](https://drive.google.com/file/d/11XeUnCYtARZg2kx7J2JWWeLULieSIYrx/view?usp=sharing) `flash_tool.exe` चलाएँ
-
-6. `Options > Option...` पर क्लिक करें और सुनिश्चित करें कि सही **COM Port** चुना गया है, UART सक्षम है और बॉड रेट **921600** पर सेट है।
-
-![](https://i.imgur.com/hnMsyeN.png)
-
-7. [C.18 फर्मवेयर](https://drive.google.com/uc?id=1MPLnD4ofrW50u8V4C5I5srGucHJg60XW&export=download) प्राप्त करें और इसे अनपैक करें
-8. फर्मवेयर के फ़ोल्डर से `MT6785_Android_scatter.txt` लोड करें
-   ![](https://i.imgur.com/8APQvkx.png)
-
-> [!CAUTION] 
-> **`Download Only` मोड रखना न भूलें** अन्यथा आप महत्वपूर्ण पार्टीशन खो देंगे।
-
-![](https://i.imgur.com/M3aUNBs.png =300x)
-
-9. इस प्रक्रिया में 15-20 मिनट तक लग सकते हैं। आरंभ करने के लिए `Download` पर क्लिक करें ([**कोई प्रगति नहीं? मुझे क्लिक करें**](https://github.com/driedpampas/realme-8-megaguide/wiki/FAQ)). सुनिश्चित करें कि आप अपना फ़ोन डिस्कनेक्ट न करें।
-![](https://i.imgur.com/uSXflCJ.png =300x)
-
-10. यदि सब कुछ ठीक रहा, तो यह इस तरह दिखना चाहिए
-![](https://i.imgur.com/qeJWt3a.png =200x)
-
-11. कुछ भी करने से पहले, **सुरक्षा के लिए फ़ोन को वाइप करें।** **Vol- और पावर बटन** दबाए रखें, रिकवरी में wipe data चुनें, और फिर **Format Data** चुनें।
+जब हो जाए, **फ़ोन को वाइप करें।** **Vol- + Power** दबाए रखें, रिकवरी में जाएँ, **Format Data** चुनें।
 
 ### डीप टेस्टिंग से बूटलोडर अनलॉक करना
 

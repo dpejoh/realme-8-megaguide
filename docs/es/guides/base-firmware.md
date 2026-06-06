@@ -31,43 +31,15 @@ Ambos usan los mismos pasos de flasheo. Solo el archivo de firmware en sí es di
 
 ## Flasheo
 
-1. Abre la consola en la carpeta de [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)
-   ![](https://i.imgur.com/RJtobaI.png)
-2. Envía el payload:
+Sigue el procedimiento de [SP Flash Tool](/es/reference/flash-tool), luego:
 
-```bash
-python mtk payload
-```
-
-   ![](https://i.imgur.com/WSQsVj1.png)
-3. Apaga tu teléfono, mantén presionados ambos **Vol+, Vol-** y conecta el cable USB.
-4. MTK Client detectará el dispositivo en modo BROM:
-   ![](https://i.imgur.com/lr7HIN0.png)
-5. Ejecuta SP Flash tool (`flash_tool.exe` en Windows, `flash_tool` en Linux)
-6. Haz clic en `Options > Option...`, selecciona el **Puerto COM** correcto, habilita UART, configura la velocidad de baudios a **921600**.
-   ![](https://i.imgur.com/hnMsyeN.png)
-7. Obtén el firmware **C.18** o **F.11** y descomprímelo
-8. Carga el scatter file del firmware:
-   ![](https://i.imgur.com/VTwpXzC.png)
-
-> [!IMPORTANT]
-> Recuerda desmarcar:
-> - **opporeserve2** [Signed partition]
-> - **cdt_engineering** [Digital warranty codes]
-
-> [!CAUTION]
-> Configura el modo en **`Download Only`** o perderás particiones críticas.
-> ![](https://i.imgur.com/M3aUNBs.png =300x)
-
-9. Coloca tu teléfono en una superficie estable. El proceso toma 15-20 minutos. Haz clic en `Download`. [**¿Sin progreso?**](https://github.com/driedpampas/realme-8-megaguide/wiki/FAQ)
-   ![](https://i.imgur.com/uSXflCJ.png =300x)
-10. Cuando termine, debería verse así:
-    ![](https://i.imgur.com/qeJWt3a.png =200x)
+**Firmware:** Usa **C.18** o **F.11**
+**Archivo scatter:** Carga el archivo scatter del firmware que descargaste
 
 > [!TIP]
 > Revisa la [FAQ](https://github.com/driedpampas/realme-8-megaguide/wiki/FAQ) si algo no funciona.
 
-11. **BORRA el teléfono por seguridad.** Mantén **Vol- + Encendido**, entra a recovery, selecciona **Format Data**.
+**BORRA el teléfono.** Mantén **Vol- + Encendido**, entra a recovery, selecciona **Format Data**.
 
 > [!IMPORTANT]
 > **Solo continúa después de haber flasheado el firmware base elegido.**

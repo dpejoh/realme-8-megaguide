@@ -39,7 +39,7 @@ El desbloqueo oficial de Realme (Deep Testing) ya no funciona. Esta guía utiliz
 
 #### Windows
 
-Instala [Python desde Microsoft Store](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5). Instala el controlador USB Mediatek y USBDk. Descarga y extrae [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763), luego ejecuta en un Símbolo del sistema:
+Instala [Python desde python.org](https://www.python.org/downloads/) (o [Microsoft Store](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5) como alternativa). Instala el controlador USB Mediatek y USBDk. Descarga y extrae [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763), luego ejecuta en un Símbolo del sistema:
 
 ```bash
 pip3 install -r requirements.txt
@@ -58,26 +58,11 @@ python -m pip install -r requirements.txt
 
 ## Degradar a RUI2
 
-1. **Extrae** y entra en la carpeta del [archivo MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)
-2. Después de la extracción, ve a la carpeta 2 niveles hacia adentro para encontrar el archivo `Requirements.txt`. Ahora abre la consola en esa carpeta:
-	![](https://i.imgur.com/RJtobaI.png)
-3. Instala las dependencias y envía el payload:
+Sigue el procedimiento de [SP Flash Tool](/es/reference/flash-tool), con estos cambios:
 
-```bash
-python -m pip install -r requirements.txt
-python mtk payload
-```
-
-Debería verse así:
-	![](https://i.imgur.com/WSQsVj1.png)
-4. Asegúrate de que tu teléfono esté apagado, mantén presionados ambos **Vol+, Vol-** y conecta el cable USB. Verás algo como esto:
-	![](https://i.imgur.com/lr7HIN0.png)
-5. El teléfono ahora está en modo BROM. Ejecuta SP Flash tool (`flash_tool.exe` en Windows, `flash_tool` en Linux)
-6. Haz clic en `Options > Option...` y asegúrate de que el **Puerto COM** correcto esté seleccionado, UART habilitado y la velocidad de baudios configurada a **921600**.
-	![](https://i.imgur.com/hnMsyeN.png)
-7. Obtén el [Firmware A.19 RUI2 de Haadi](https://drive.google.com/file/d/1Iy2hwZ0mHQtpHgpyRDRHMZv13FTTvups/view?usp=share_link) y descomprímelo
-8. Carga `scatter.txt` del Firmware de Haadi
-    ![](https://i.imgur.com/VTwpXzC.png)
+- **Firmware:** Usa el [A.19 RUI2 de Haadi](https://drive.google.com/file/d/1Iy2hwZ0mHQtpHgpyRDRHMZv13FTTvups/view?usp=share_link) en lugar de C.18/F.11
+- **Archivo scatter:** Carga `scatter.txt` de la carpeta del firmware A.19
+- **Particiones a desmarcar:**
 
 > [!IMPORTANT]
 > **Recuerda desmarcar:**
@@ -85,15 +70,7 @@ Debería verse así:
 > | --- | --- |
 > | <img src="https://i.imgur.com/9Kp65P7.png" width="150"> | <img src="https://i.imgur.com/S6XOitJ.png" width="150"> |
 
-> [!CAUTION]
-> **Recuerda tener el modo `Download Only`** o perderás particiones críticas.
->    ![](https://i.imgur.com/M3aUNBs.png =300x)
-
-9. Evita mover tu teléfono para no desconectar nada. Este proceso tomará hasta 15-20 minutos. Para instalar A.19 en tu teléfono, haz clic en `Download`.
-	![](https://i.imgur.com/uSXflCJ.png =300x)
-10. Si todo sale bien, debería verse así:
-	![](https://i.imgur.com/qeJWt3a.png =200x)
-11. Antes de hacer cualquier cosa, **BORRA el teléfono por seguridad.** Mantén presionados **Vol- y el botón de encendido**, en Recovery selecciona wipe data, y luego selecciona **Format Data**.
+Cuando termines, **BORRA el teléfono.** Mantén **Vol- + Encendido**, entra a recovery, selecciona **Format Data**.
 
 ## Desbloqueando el bootloader
 
@@ -127,7 +104,7 @@ O mantén todos los botones físicos hasta que el teléfono se reinicie.
 > **El primer inicio tomará entre 5 y 20 minutos.**
 > **Verás advertencias de `dm-verity corruption` y `orange state`. Presiona el *Botón de Encendido* para continuar. Esto es normal y se solucionará en el paso de [parchado de LK](/es/guides/patching-lk).**
 
-6. Configura tu teléfono y habilita **Opciones de Desarrollador** y verifica que el bootloader esté desbloqueado en `OEM unlocking`
+6. Configura tu teléfono y activa **Opciones de Desarrollador**. Alterna **Desbloqueo OEM** apagado y encendido para asegurarte de que esté activo.
 
 > [!TIP]
 > Revisa la [FAQ](https://github.com/driedpampas/realme-8-megaguide/wiki/FAQ) si algo no funciona o tienes preguntas.

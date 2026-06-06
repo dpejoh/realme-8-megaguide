@@ -41,45 +41,15 @@ Already unlocked? Skip to [Installing a Custom recovery and ROM](/guides/custom-
 
 ### Flash RUI3 C.18
 
-1. **Extract** and enter the folder of [MTK Client archive](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)
-2. Open the console in [MTK Client's](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763) folder
-![](https://i.imgur.com/RJtobaI.png)
+Follow the [SP Flash Tool](/reference/flash-tool) procedure, with these changes:
 
-3. Install dependencies and send the payload:
-
-```bash
-python -m pip install -r requirements.txt
-python mtk payload
-```
-
-It should look like this:
-![](https://i.imgur.com/WSQsVj1.png)
-
-4. Make sure your phone is powered off, hold down both **Vol+, Vol-** and connect the usb cable. You will see something like this:
-![](https://i.imgur.com/lr7HIN0.png)
-
-5. The phone is now in BROM mode. Run the [SP Flash tool](https://drive.google.com/file/d/11XeUnCYtARZg2kx7J2JWWeLULieSIYrx/view?usp=sharing) `flash_tool.exe`
-
-6. Click on `Options > Option...` and make sure the right **COM Port** is selected, UART enabled and baud rate is set to **921600**.
-
-![](https://i.imgur.com/hnMsyeN.png)
-
-7. Get [C.18 Firmware](https://drive.google.com/uc?id=1MPLnD4ofrW50u8V4C5I5srGucHJg60XW&export=download) and unpack it
-8. Load `MT6785_Android_scatter.txt` from the firmware's folder
-   ![](https://i.imgur.com/8APQvkx.png)
+- **Firmware:** Use [C.18](https://drive.google.com/uc?id=1MPLnD4ofrW50u8V4C5I5srGucHJg60XW&export=download) firmware
+- **Scatter file:** Load `MT6785_Android_scatter.txt` from the firmware folder
 
 > [!CAUTION] 
 > **Remember to have `Download Only` mode** or you will lose critical partitions.
 
-![](https://i.imgur.com/M3aUNBs.png =300x)
-
-9. This process will take up to 15-20 minutes. To begin, click `Download` ([**No progress? Click me**](https://github.com/driedpampas/realme-8-megaguide/wiki/FAQ)). Make sure to not disconnect your phone.
-![](https://i.imgur.com/uSXflCJ.png =300x)
-
-10. If everything goes well, it should look like this
-![](https://i.imgur.com/qeJWt3a.png =200x)
-
-11. Before doing anything, **WIPE the phone for safety.** Hold down **Vol-, and power button**, In recovery select wipe data, and then select **Format Data**.
+When done, **WIPE the phone.** Hold **Vol- + Power**, enter recovery, select **Format Data**.
 
 ### Unlocking the bootloader with Deep Testing
 

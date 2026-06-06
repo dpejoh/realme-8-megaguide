@@ -39,7 +39,7 @@ O desbloqueio oficial da Realme (Deep Testing) não funciona mais. Este guia usa
 
 #### Windows
 
-Instale o [Python da Microsoft Store](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5). Instale o Mediatek USB driver e o USBDk. Baixe e extraia o [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763), então execute no Prompt de Comando:
+Instale o [Python do python.org](https://www.python.org/downloads/) (ou [Microsoft Store](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5) como alternativa). Instale o Mediatek USB driver e o USBDk. Baixe e extraia o [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763), então execute no Prompt de Comando:
 
 ```bash
 pip3 install -r requirements.txt
@@ -58,26 +58,11 @@ python -m pip install -r requirements.txt
 
 ## Downgrade para RUI2
 
-1. **Extraia** e entre na pasta do [arquivo do MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)
-2. Após a extração, vá para a pasta 2 níveis abaixo para encontrar o arquivo `Requirements.txt`. Agora abra o console na pasta:
-	![](https://i.imgur.com/RJtobaI.png)
-3. Instale as dependências e envie o payload:
+Siga o procedimento do [SP Flash Tool](/pt-BR/reference/flash-tool), com estas alterações:
 
-```bash
-python -m pip install -r requirements.txt
-python mtk payload
-```
-
-Deve ficar assim:
-	![](https://i.imgur.com/WSQsVj1.png)
-4. Certifique-se de que o telefone está desligado, segure ambos **Vol+, Vol-** e conecte o cabo USB. Você verá algo assim:
-	![](https://i.imgur.com/lr7HIN0.png)
-5. O telefone está agora em modo BROM. Execute o SP Flash tool (`flash_tool.exe` no Windows, `flash_tool` no Linux)
-6. Clique em `Options > Option...` e certifique-se de que a **COM Port** correta está selecionada, UART habilitado e a taxa de transmissão (baud rate) configurada para **921600**.
-	![](https://i.imgur.com/hnMsyeN.png)
-7. Obtenha a [Firmware A.19 RUI2 do Haadi](https://drive.google.com/file/d/1Iy2hwZ0mHQtpHgpyRDRHMZv13FTTvups/view?usp=share_link) e descompacte-a
-8. Carregue o `scatter.txt` da Firmware do Haadi
-    ![](https://i.imgur.com/VTwpXzC.png)
+- **Firmware:** Use a [A.19 RUI2 do Haadi](https://drive.google.com/file/d/1Iy2hwZ0mHQtpHgpyRDRHMZv13FTTvups/view?usp=share_link) em vez de C.18/F.11
+- **Arquivo scatter:** Carregue o `scatter.txt` da pasta do firmware A.19
+- **Partições para desmarcar:**
 
 > [!IMPORTANT]
 > **Lembre-se de desmarcar:**
@@ -85,15 +70,7 @@ Deve ficar assim:
 > | --- | --- |
 > | <img src="https://i.imgur.com/9Kp65P7.png" width="150"> | <img src="https://i.imgur.com/S6XOitJ.png" width="150"> |
 
-> [!CAUTION]
-> **Lembre-se de usar o modo `Download Only`** ou você perderá partições críticas.
-   ![](https://i.imgur.com/M3aUNBs.png =300x)
-
-9. Evite mexer no telefone para não desconectar nada. Este processo levará de 15 a 20 minutos. Para instalar A.19 no telefone, clique em `Download`.
-	![](https://i.imgur.com/uSXflCJ.png =300x)
-10. Se tudo correr bem, deve ficar assim:
-	![](https://i.imgur.com/qeJWt3a.png =200x)
-11. Antes de fazer qualquer coisa, **LIMPE (WIPE) o telefone por segurança.** Segure **Vol- e o botão liga/desliga**. Na recovery, selecione wipe data e depois **Format Data**.
+Quando terminar, **LIMPE (WIPE) o telefone.** Segure **Vol- + Power**, entre na recovery, selecione **Format Data**.
 
 ## Desbloqueando o bootloader
 
@@ -127,7 +104,7 @@ Ou segure todos os botões físicos até o telefone reiniciar.
 > **A primeira inicialização levará de 5 a 20 minutos.**
 > **Você verá avisos de `dm-verity corruption` e `orange state`. Pressione o *Botão Liga/Desliga* para continuar. Isso é normal e será corrigido na etapa de [Patching LK](/pt-BR/guides/patching-lk).**
 
-6. Configure o telefone e ative **Opções do Desenvolvedor** e verifique se o bootloader está desbloqueado em `OEM unlocking`.
+6. Configure seu telefone e ative as **Opções do Desenvolvedor**. Alterne o **Desbloqueio OEM** desligado e ligado para garantir que esteja ativo.
 
 > [!TIP]
 > Consulte o [FAQ](https://github.com/driedpampas/realme-8-megaguide/wiki/FAQ) se algo não funcionar ou se tiver dúvidas.

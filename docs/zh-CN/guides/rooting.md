@@ -92,6 +92,9 @@ fastboot reboot
 - [KernelSU zip](https://github.com/HowWof/KernelSU_Builder/releases/latest)
 - [KSU manager APK](https://github.com/tiann/KernelSU/releases/download/v1.0.0/KernelSU_v1.0.0_11874-release.apk)
 
+> [!TIP]
+> 更新版本的 KernelSU 可在 [Telegram 群组](https://t.me/Realme8AOSPGroup) 中找到。
+
 1. 重启到恢复模式：
 
 ```bash

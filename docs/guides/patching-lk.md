@@ -20,7 +20,7 @@ python mtk r lk lk.bin
 
 The `lk.bin` file appears in the MTK Client folder.
 
-4. Go to [lkpatcher.cxwof.dev](http://lkpatcher.cxwof.dev/), upload your `lk.bin`, and download `lk-patched.bin`. Move it to the MTK Client folder.
+4. Go to [lkpatcher.r0rt1z2.com](https://lkpatcher.r0rt1z2.com/), upload your `lk.bin`, and download `lk-patched.bin`. Move it to the MTK Client folder.
 5. Flash the patched lk:
 
 ```bash

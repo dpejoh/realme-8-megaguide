@@ -37,49 +37,19 @@
    2. Encuentra el archivo **.inf**, haz clic derecho y presiona instalar
    ![](https://i.imgur.com/niVRaOn.png)
 2. Instala [USBDk](https://github.com/daynix/UsbDk/releases/)
-3. Instala [Python desde Microsoft Store](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5)
+3. Instala [Python desde python.org](https://www.python.org/downloads/) (o [Microsoft Store](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5) como alternativa)
 
 ### Flashear RUI3 C.18
 
-1. **Extrae** y entra en la carpeta del [archivo MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)
-2. Abre la consola en la carpeta de [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)
-![](https://i.imgur.com/RJtobaI.png)
+Sigue el procedimiento de [SP Flash Tool](/es/reference/flash-tool), con estos cambios:
 
-3. Instala las dependencias y envía el payload:
-
-```bash
-python -m pip install -r requirements.txt
-python mtk payload
-```
-
-Debería verse así:
-![](https://i.imgur.com/WSQsVj1.png)
-
-4. Asegúrate de que tu teléfono esté apagado, mantén presionados ambos **Vol+, Vol-** y conecta el cable USB. Verás algo como esto:
-![](https://i.imgur.com/lr7HIN0.png)
-
-5. El teléfono ahora está en modo BROM. Ejecuta [SP Flash tool](https://drive.google.com/file/d/11XeUnCYtARZg2kx7J2JWWeLULieSIYrx/view?usp=sharing) `flash_tool.exe`
-
-6. Haz clic en `Options > Option...` y asegúrate de que el **Puerto COM** correcto esté seleccionado, UART habilitado y la velocidad de baudios configurada a **921600**.
-
-![](https://i.imgur.com/hnMsyeN.png)
-
-7. Obtén el [Firmware C.18](https://drive.google.com/uc?id=1MPLnD4ofrW50u8V4C5I5srGucHJg60XW&export=download) y descomprímelo
-8. Carga `MT6785_Android_scatter.txt` desde la carpeta del firmware
-   ![](https://i.imgur.com/8APQvkx.png)
+- **Firmware:** Usa el [C.18](https://drive.google.com/uc?id=1MPLnD4ofrW50u8V4C5I5srGucHJg60XW&export=download)
+- **Archivo scatter:** Carga `MT6785_Android_scatter.txt` de la carpeta del firmware
 
 > [!CAUTION]
 > **Recuerda tener el modo `Download Only`** o perderás particiones críticas.
 
-![](https://i.imgur.com/M3aUNBs.png =300x)
-
-9. Este proceso tomará hasta 15-20 minutos. Para comenzar, haz clic en `Download` ([**¿Sin progreso? Haz clic aquí**](https://github.com/driedpampas/realme-8-megaguide/wiki/FAQ)). Asegúrate de no desconectar tu teléfono.
-![](https://i.imgur.com/uSXflCJ.png =300x)
-
-10. Si todo sale bien, debería verse así:
-![](https://i.imgur.com/qeJWt3a.png =200x)
-
-11. Antes de hacer cualquier cosa, **BORRA el teléfono por seguridad.** Mantén presionados **Vol- y el botón de encendido**, en Recovery selecciona wipe data, y luego selecciona **Format Data**.
+Cuando termines, **BORRA el teléfono.** Mantén **Vol- + Encendido**, entra a recovery, selecciona **Format Data**.
 
 ### Desbloqueando el bootloader con Deep Testing
 

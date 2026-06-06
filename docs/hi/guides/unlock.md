@@ -19,7 +19,7 @@
 
 ### Windows
 
-- [Python 3.10+](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5)
+- [Python 3.10+](https://www.python.org/downloads/)
 - [Mediatek USB driver](https://drive.google.com/file/d/1UExJQxI1DmBGeDoYPul5YTXitOnsU6zx/view?usp=sharing)
 - [USBDk](https://github.com/daynix/UsbDk/releases/download/v1.00-22/UsbDk_1.0.22_x64.msi)
 - [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)
@@ -39,7 +39,7 @@
 
 #### Windows
 
-[Microsoft Store से Python](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5) इंस्टॉल करें। Mediatek USB ड्राइवर और USBDk इंस्टॉल करें। [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763) डाउनलोड और एक्सट्रैक्ट करें, फिर Command Prompt में चलाएँ:
+[Python को python.org से](https://www.python.org/downloads/) इंस्टॉल करें (या [Microsoft Store](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5) वैकल्पिक रूप से)। Mediatek USB ड्राइवर और USBDk इंस्टॉल करें। [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763) डाउनलोड और एक्सट्रैक्ट करें, फिर Command Prompt में चलाएँ:
 
 ```bash
 pip3 install -r requirements.txt
@@ -58,42 +58,19 @@ python -m pip install -r requirements.txt
 
 ## RUI2 में डाउनग्रेड करें
 
-1. [MTK Client आर्काइव](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763) को **एक्सट्रैक्ट** करें और उसके फ़ोल्डर में जाएँ
-2. एक्सट्रैक्शन के बाद `Requirements.txt` फ़ाइल खोजने के लिए फ़ोल्डर में 2 लेवल अंदर जाएँ। अब फ़ोल्डर में कंसोल खोलें:
-	![](https://i.imgur.com/RJtobaI.png)
-3. निर्भरताएँ इंस्टॉल करें और पेलोड भेजें:
+[SP Flash Tool](/hi/reference/flash-tool) प्रक्रिया का पालन करें, इन बदलावों के साथ:
 
-```bash
-python -m pip install -r requirements.txt
-python mtk payload
-```
+- **फर्मवेयर:** C.18/F.11 के बजाय [Haadi का A.19 RUI2](https://drive.google.com/file/d/1Iy2hwZ0mHQtpHgpyRDRHMZv13FTTvups/view?usp=share_link) उपयोग करें
+- **स्कैटर फ़ाइल:** A.19 फर्मवेयर फ़ोल्डर से `scatter.txt` लोड करें
+- **अनचेक करने के लिए पार्टीशन:**
 
-यह इस तरह दिखना चाहिए:
-	![](https://i.imgur.com/WSQsVj1.png)
-4. सुनिश्चित करें कि आपका फ़ोन बंद है, दोनों **Vol+, Vol-** दबाए रखें और USB केबल कनेक्ट करें। आप कुछ इस तरह देखेंगे:
-	![](https://i.imgur.com/lr7HIN0.png)
-5. फ़ोन अब BROM मोड में है। SP Flash टूल चलाएँ (Windows पर `flash_tool.exe`, Linux पर `flash_tool`)
-6. `Options > Option...` पर क्लिक करें और सुनिश्चित करें कि सही **COM Port** चुना गया है, UART सक्षम है और बॉड रेट **921600** पर सेट है।
-	![](https://i.imgur.com/hnMsyeN.png)
-7. [Haadi का A.19 RUI2 फर्मवेयर](https://drive.google.com/file/d/1Iy2hwZ0mHQtpHgpyRDRHMZv13FTTvups/view?usp=share_link) प्राप्त करें और इसे अनपैक करें
-8. Haadi के फर्मवेयर से `scatter.txt` लोड करें
-    ![](https://i.imgur.com/VTwpXzC.png)
-	
 > [!IMPORTANT]
-> **इन्हें अनचेक करना न भूलें:**
-| opporeserve2 [Signed partition] | cdt_engineering [Digital warranty codes] |
-| --- | --- |
-| <img src="https://i.imgur.com/9Kp65P7.png" width="150"> | <img src="https://i.imgur.com/S6XOitJ.png" width="150"> |
+> **इन्हें अनचेक करना याद रखें:**
+> | opporeserve2 [Signed partition] | cdt_engineering [Digital warranty codes] |
+> | --- | --- |
+> | <img src="https://i.imgur.com/9Kp65P7.png" width="150"> | <img src="https://i.imgur.com/S6XOitJ.png" width="150"> |
 
-> [!CAUTION]
-> **`Download Only` मोड रखना न भूलें** अन्यथा आप महत्वपूर्ण पार्टीशन खो देंगे।
-   ![](https://i.imgur.com/M3aUNBs.png =300x)
-
-9. कनेक्शन न टूटे इसलिए अपने फ़ोन को हिलाने से बचें। इस प्रक्रिया में 15-20 मिनट तक लग सकते हैं। अपने फ़ोन पर A.19 प्राप्त करने के लिए `Download` पर क्लिक करें।
-	![](https://i.imgur.com/uSXflCJ.png =300x)
-10. यदि सब कुछ ठीक रहा, तो यह इस तरह दिखना चाहिए
-	![](https://i.imgur.com/qeJWt3a.png =200x)
-11. कुछ भी करने से पहले, **सुरक्षा के लिए फ़ोन को वाइप करें।** **Vol- और पावर बटन** दबाए रखें, रिकवरी में wipe data चुनें, और फिर **Format Data** चुनें।
+जब हो जाए, **फ़ोन को वाइप करें।** **Vol- + Power** दबाए रखें, रिकवरी में जाएँ, **Format Data** चुनें।
 
 ## बूटलोडर अनलॉक करना
 
@@ -127,7 +104,7 @@ python mtk reset
 > **पहला बूट लगभग 5-20 मिनट लेगा।**
 > **आपको `dm-verity corruption` और `orange state` चेतावनियाँ दिखाई देंगी। जारी रखने के लिए *पावर बटन* दबाएँ। ये सामान्य हैं और [LK पैचिंग](/hi/guides/patching-lk) चरण में ठीक कर दिए जाएँगे।**
 
-6. अपना फ़ोन सेट करें और **डेवलपर विकल्प** सक्षम करें और `OEM unlocking` के अंतर्गत सत्यापित करें कि बूटलोडर अनलॉक है
+6. अपना फ़ोन सेट करें और **डेवलपर विकल्प** सक्षम करें। `OEM unlocking` को बंद और वापस चालू करके सुनिश्चित करें कि यह सक्रिय है।
 
 > [!TIP]
 > यदि कुछ काम नहीं करता है या आपके प्रश्न हैं तो [FAQ](https://github.com/driedpampas/realme-8-megaguide/wiki/FAQ) देखें।

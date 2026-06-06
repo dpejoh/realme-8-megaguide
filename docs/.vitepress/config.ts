@@ -64,6 +64,7 @@ export default withPwa(defineConfig({
             items: [
               { text: 'Recoveries', link: '/reference/recoveries' },
               { text: 'Kernels', link: '/reference/kernels' },
+              { text: 'Flash Tool', link: '/reference/flash-tool' },
             ],
           },
           {
@@ -104,6 +105,7 @@ export default withPwa(defineConfig({
             items: [
               { text: 'Recuperaciones', link: '/es/reference/recoveries' },
               { text: 'Kernels', link: '/es/reference/kernels' },
+              { text: 'Flash Tool', link: '/es/reference/flash-tool' },
             ],
           },
           {
@@ -144,6 +146,7 @@ export default withPwa(defineConfig({
             items: [
               { text: 'Recuperações', link: '/pt-BR/reference/recoveries' },
               { text: 'Kernels', link: '/pt-BR/reference/kernels' },
+              { text: 'Flash Tool', link: '/pt-BR/reference/flash-tool' },
             ],
           },
           {
@@ -184,6 +187,7 @@ export default withPwa(defineConfig({
             items: [
               { text: 'रिकवरी', link: '/hi/reference/recoveries' },
               { text: 'कर्नेल', link: '/hi/reference/kernels' },
+              { text: 'Flash Tool', link: '/hi/reference/flash-tool' },
             ],
           },
           {
@@ -224,6 +228,7 @@ export default withPwa(defineConfig({
             items: [
               { text: '恢复', link: '/zh-CN/reference/recoveries' },
               { text: '内核', link: '/zh-CN/reference/kernels' },
+              { text: 'Flash Tool', link: '/zh-CN/reference/flash-tool' },
             ],
           },
           {
@@ -266,6 +271,7 @@ export default withPwa(defineConfig({
             items: [
               { text: 'الاسترداد', link: '/ar/reference/recoveries' },
               { text: 'النواة', link: '/ar/reference/kernels' },
+              { text: 'Flash Tool', link: '/ar/reference/flash-tool' },
             ],
           },
           {

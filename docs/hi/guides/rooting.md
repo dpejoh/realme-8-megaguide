@@ -92,6 +92,9 @@ Magisk Manager ऐप में `Uninstall > Complete uninstall` चुनें
 - [KernelSU zip](https://github.com/HowWof/KernelSU_Builder/releases/latest)
 - [KSU manager APK](https://github.com/tiann/KernelSU/releases/download/v1.0.0/KernelSU_v1.0.0_11874-release.apk)
 
+> [!TIP]
+> KernelSU के नए संस्करण [टेलीग्राम समूह](https://t.me/Realme8AOSPGroup) पर उपलब्ध हैं।
+
 1. रिकवरी में रीबूट करें:
 
 ```bash

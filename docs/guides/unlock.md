@@ -58,42 +58,19 @@ python -m pip install -r requirements.txt
 
 ## Downgrade to RUI2
 
-1. **Extract** and enter the folder of [MTK Client archive](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)
-2. After extraction go into the folder 2 levels deep to find the `Requirements.txt` file. Now open the console in the folder:
-	![](https://i.imgur.com/RJtobaI.png)
-3. Install dependencies and send the payload:
+Follow the [SP Flash Tool](/reference/flash-tool) procedure, with these changes:
 
-```bash
-python -m pip install -r requirements.txt
-python mtk payload
-```
+- **Firmware:** Use [Haadi's A.19 RUI2](https://drive.google.com/file/d/1Iy2hwZ0mHQtpHgpyRDRHMZv13FTTvups/view?usp=share_link) instead of C.18/F.11
+- **Scatter file:** Load `scatter.txt` from the A.19 firmware folder
+- **Partitions to uncheck:**
 
-It should look like this: 
-	![](https://i.imgur.com/WSQsVj1.png)
-4. Make sure your phone is powered off, hold down both **Vol+, Vol-** and connect the usb cable. You will see something like this:
-	![](https://i.imgur.com/lr7HIN0.png)
-5. The phone is now in BROM mode. Run the SP Flash tool (`flash_tool.exe` on Windows, `flash_tool` on Linux)
-6. Click on `Options > Option...` and make sure the right **COM Port** is selected, UART enabled and baud rate is set to **921600**.
-	![](https://i.imgur.com/hnMsyeN.png)
-7. Get [Haadi's A.19 RUI2 Firmware](https://drive.google.com/file/d/1Iy2hwZ0mHQtpHgpyRDRHMZv13FTTvups/view?usp=share_link) and unpack it
-8. Load `scatter.txt` from Haadi's Firmware
-    ![](https://i.imgur.com/VTwpXzC.png)
-	
 > [!IMPORTANT]
 > **Remember to uncheck:**
-| opporeserve2 [Signed partition] | cdt_engineering [Digital warranty codes] |
-| --- | --- |
-| <img src="https://i.imgur.com/9Kp65P7.png" width="150"> | <img src="https://i.imgur.com/S6XOitJ.png" width="150"> |
+> | opporeserve2 [Signed partition] | cdt_engineering [Digital warranty codes] |
+> | --- | --- |
+> | <img src="https://i.imgur.com/9Kp65P7.png" width="150"> | <img src="https://i.imgur.com/S6XOitJ.png" width="150"> |
 
-> [!CAUTION]
-> **Remember to have `Download Only` mode** or you will lose critical partitions.
-   ![](https://i.imgur.com/M3aUNBs.png =300x)
-
-9. Avoid moving your phone so as to not disconnect anything. This process will take up to 15-20 minutes. To get A.19 on your phone, click `Download`.
-	![](https://i.imgur.com/uSXflCJ.png =300x)
-10. If everything goes well, it should look like this
-	![](https://i.imgur.com/qeJWt3a.png =200x)
-11. Before doing anything, **WIPE the phone for safety.** Hold down **Vol-, and power button**, In recovery select wipe data, and then select **Format Data**.
+When done, **WIPE the phone.** Hold **Vol- + Power**, enter recovery, select **Format Data**.
 
 ## Unlocking the bootloader
 
