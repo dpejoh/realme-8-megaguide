@@ -3,7 +3,7 @@
 > [!Warning]
 > Lee cada paso para evitar brickear el dispositivo. Windows 7 no es compatible. Si estás en RUI4, actualiza a F.09 o superior primero.
 
-¿Preguntas? [Realme 8 AOSP](https://t.me/Realme8AOSPGroup) en Telegram o [GitHub Discussions](https://github.com/driedpampas/realme-8-megaguide/discussions/new/choose).
+¿Preguntas? [Realme 8 AOSP](https://t.me/Realme8AOSPGroup) en Telegram.
 
 ¿Ya está desbloqueado? Salta a [Parchar LK](/es/guides/patching-lk) (acceso fastboot) o [ROM Personalizada](/es/guides/custom-rom).
 

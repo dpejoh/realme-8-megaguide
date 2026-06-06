@@ -3,7 +3,7 @@
 > [!Warning]
 > **यह विधि अब काम नहीं करती है। ये चरण केवल संदर्भ के लिए रखे गए हैं।**
 
-प्रश्न? Telegram पर [Realme 8 AOSP](https://t.me/Realme8AOSPGroup) को संदेश भेजें या नई [Github Discussion](https://github.com/driedpampas/realme-8-megaguide/discussions/new/choose) शुरू करें।
+प्रश्न? Telegram पर [Realme 8 AOSP](https://t.me/Realme8AOSPGroup) को संदेश भेजें।
 
 पहले से अनलॉक है? [कस्टम रिकवरी और ROM स्थापित करना](/hi/guides/custom-rom) पर जाएँ।
 

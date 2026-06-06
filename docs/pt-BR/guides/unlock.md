@@ -3,7 +3,7 @@
 > [!Warning]
 > Leia cada etapa para evitar danificar o aparelho (brick). Windows 7 não é suportado. Se você estiver no RUI4, atualize para F.09 ou superior primeiro.
 
-Dúvidas? [Realme 8 AOSP](https://t.me/Realme8AOSPGroup) no Telegram ou [Discussões no GitHub](https://github.com/driedpampas/realme-8-megaguide/discussions/new/choose).
+Dúvidas? [Realme 8 AOSP](https://t.me/Realme8AOSPGroup) no Telegram.
 
 Já desbloqueou? Pule para [Patching LK](/pt-BR/guides/patching-lk) (acesso fastboot) ou [ROM Personalizada](/pt-BR/guides/custom-rom).
 

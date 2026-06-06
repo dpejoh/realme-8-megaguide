@@ -3,7 +3,7 @@
 > [!Warning]
 > **Este método não funciona mais. Estas etapas são mantidas apenas para referência.**
 
-Dúvidas? Envie mensagem para [Realme 8 AOSP](https://t.me/Realme8AOSPGroup) no Telegram ou inicie uma nova [Discussão no GitHub](https://github.com/driedpampas/realme-8-megaguide/discussions/new/choose).
+Dúvidas? Envie mensagem para [Realme 8 AOSP](https://t.me/Realme8AOSPGroup) no Telegram.
 
 Já desbloqueou? Pule para [Instalar uma Recovery personalizada e ROM](/pt-BR/guides/custom-rom).
 

@@ -3,7 +3,7 @@
 > [!Warning]
 > **此方法已不再可用。以下步骤仅作参考保留。**
 
-有问题？通过 Telegram 联系 [Realme 8 AOSP](https://t.me/Realme8AOSPGroup) 或发起新的 [GitHub 讨论](https://github.com/driedpampas/realme-8-megaguide/discussions/new/choose)。
+有问题？通过 Telegram 联系 [Realme 8 AOSP](https://t.me/Realme8AOSPGroup)。
 
 已经解锁？跳转到[安装自定义恢复和 ROM](/zh-CN/guides/custom-rom)。
 

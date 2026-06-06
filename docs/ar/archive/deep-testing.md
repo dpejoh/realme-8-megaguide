@@ -3,7 +3,7 @@
 > [!Warning]
 > **هذه الطريقة لم تعد تعمل. هذه الخطوات محفوظة للرجوع إليها فقط.**
 
-لديك أسئلة؟ أرسل إلى [Realme 8 AOSP](https://t.me/Realme8AOSPGroup) على تيليجرام أو ابدأ [مناقشة جديدة على GitHub](https://github.com/driedpampas/realme-8-megaguide/discussions/new/choose).
+لديك أسئلة؟ أرسل إلى [Realme 8 AOSP](https://t.me/Realme8AOSPGroup) على تيليجرام.
 
 هل تم فتح القفل بالفعل؟ انتقل إلى [تثبيت أداة استرداد مخصصة وروم مخصص](/ar/guides/custom-rom).
 
