@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "realme-8-megaguide",
+  "compatibility_date": "2026-06-06",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "docs/.vitepress/dist"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
