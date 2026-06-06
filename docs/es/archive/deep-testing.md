@@ -20,6 +20,9 @@
 - Firmware: [C.18](https://drive.google.com/uc?id=1MPLnD4ofrW50u8V4C5I5srGucHJg60XW&export=download)
 - APK: [Deep Testing](https://drive.google.com/file/d/1pESMmJef6Gm9YlJAE7OA_DDNnhFn3Jpz/view?usp=sharing)
 
+> [!TIP]
+> En Linux, los comandos `mtk` se pueden ejecutar directamente (no se necesita el prefijo `python`).
+
 ## Respaldar tus particiones del sistema
 
 > [!CAUTION]

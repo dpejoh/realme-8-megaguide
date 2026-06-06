@@ -23,6 +23,9 @@
 - `libusb`
 - [MTK Client](https://github.com/bkerler/mtkclient/archive/refs/heads/main.zip)
 
+> [!TIP]
+> على لينكس، يمكن تشغيل أوامر `mtk` مباشرة (لا حاجة لبادئة `python`).
+
 ## النسخ الاحتياطي
 
 1. جهّز مجلدًا لتخزين نسخ الأقسام الاحتياطية. في هذا المثال سنستخدم `firmware-backup`.

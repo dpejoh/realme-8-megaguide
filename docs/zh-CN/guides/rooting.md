@@ -19,6 +19,9 @@
 - [platform-tools](https://dl.google.com/android/repository/platform-tools-latest-linux.zip)
 - [Magisk Manager APK](https://github.com/topjohnwu/Magisk/releases/tag/v27.0)
 
+> [!TIP]
+> 在 Linux 上，`mtk` 命令可以直接运行（无需 `python` 前缀）。
+
 1. 在 MTK Client 的文件夹中打开控制台。
 2. 读取 boot 分区：
 

@@ -19,6 +19,9 @@
 - [platform-tools](https://dl.google.com/android/repository/platform-tools-latest-linux.zip)
 - [Magisk Manager APK](https://github.com/topjohnwu/Magisk/releases/tag/v27.0)
 
+> [!TIP]
+> En Linux, los comandos `mtk` se pueden ejecutar directamente (no se necesita el prefijo `python`).
+
 1. Abre la consola en la carpeta de MTK Client.
 2. Lee la partición boot:
 

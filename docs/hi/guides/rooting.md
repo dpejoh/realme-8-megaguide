@@ -19,6 +19,9 @@
 - [platform-tools](https://dl.google.com/android/repository/platform-tools-latest-linux.zip)
 - [Magisk Manager APK](https://github.com/topjohnwu/Magisk/releases/tag/v27.0)
 
+> [!TIP]
+> लिनक्स पर, `mtk` कमांड सीधे चलाए जा सकते हैं (`python` उपसर्ग की आवश्यकता नहीं है)।
+
 1. MTK Client के फ़ोल्डर में कंसोल खोलें।
 2. बूट पार्टीशन पढ़ें:
 

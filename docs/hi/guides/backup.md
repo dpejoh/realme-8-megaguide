@@ -21,6 +21,10 @@
 - `python` (>= 3.9)
 - `libusb`
 - [MTK Client](https://github.com/bkerler/mtkclient/archive/refs/heads/main.zip)
+
+> [!TIP]
+> लिनक्स पर, `mtk` कमांड सीधे चलाए जा सकते हैं (`python` उपसर्ग की आवश्यकता नहीं है)।
+
 ## बैकअप
 
 1. बैकअप की गई पार्टीशन को संग्रहीत करने के लिए एक फ़ोल्डर तैयार करें। इस उदाहरण के लिए हम `firmware-backup` का उपयोग करेंगे।

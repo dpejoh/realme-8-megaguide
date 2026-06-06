@@ -21,6 +21,10 @@
 - `python` (>= 3.9)
 - `libusb`
 - [MTK Client](https://github.com/bkerler/mtkclient/archive/refs/heads/main.zip)
+
+> [!TIP]
+> 在 Linux 上，`mtk` 命令可以直接运行（无需 `python` 前缀）。
+
 ## 备份
 
 1. 准备一个文件夹用于存储备份的分区。本例中我们使用 `firmware-backup`。

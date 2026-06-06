@@ -5,6 +5,9 @@
 
 تأكد من فتح قفل bootloader أولاً. راجع دليل [فتح قفل Bootloader](/ar/guides/unlock) إذا لم تكن قد فعلت ذلك بعد.
 
+> [!TIP]
+> على لينكس، يمكن تشغيل أوامر `mtk` مباشرة (لا حاجة لبادئة `python`).
+
 ## التصحيح والوميض
 
 1. افتح وحدة التحكم في مجلد [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)

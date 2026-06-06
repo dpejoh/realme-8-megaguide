@@ -5,6 +5,9 @@
 
 Asegúrate de que tu bootloader esté desbloqueado primero. Consulta la guía de [Desbloquear Bootloader](/es/guides/unlock) si aún no lo has hecho.
 
+> [!TIP]
+> En Linux, los comandos `mtk` se pueden ejecutar directamente (no se necesita el prefijo `python`).
+
 ## Parchar y flashear
 
 1. Abre una consola en la carpeta de [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)

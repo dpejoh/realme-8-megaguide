@@ -20,6 +20,9 @@
 - फर्मवेयर: [C.18](https://drive.google.com/uc?id=1MPLnD4ofrW50u8V4C5I5srGucHJg60XW&export=download)
 - APK: [डीप टेस्टिंग](https://drive.google.com/file/d/1pESMmJef6Gm9YlJAE7OA_DDNnhFn3Jpz/view?usp=sharing)
 
+> [!TIP]
+> लिनक्स पर, `mtk` कमांड सीधे चलाए जा सकते हैं (`python` उपसर्ग की आवश्यकता नहीं है)।
+
 ## अपने सिस्टम पार्टीशन का बैकअप लें
 
 > [!CAUTION]

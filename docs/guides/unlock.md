@@ -53,6 +53,9 @@ Install `libusb` and `python` from your package manager (ensure Python >= 3.9). 
 python -m pip install -r requirements.txt
 ```
 
+> [!TIP]
+> On Linux, after the dependencies are installed, `mtk` commands can be run directly (no `python` prefix needed).
+
 ## Downgrade to RUI2
 
 1. **Extract** and enter the folder of [MTK Client archive](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)

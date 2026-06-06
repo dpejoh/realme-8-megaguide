@@ -20,6 +20,9 @@
 - البرنامج الثابت: [C.18](https://drive.google.com/uc?id=1MPLnD4ofrW50u8V4C5I5srGucHJg60XW&export=download)
 - APK: [Deep Testing](https://drive.google.com/file/d/1pESMmJef6Gm9YlJAE7OA_DDNnhFn3Jpz/view?usp=sharing)
 
+> [!TIP]
+> على لينكس، يمكن تشغيل أوامر `mtk` مباشرة (لا حاجة لبادئة `python`).
+
 ## عمل نسخة احتياطية لأقسام النظام لديك
 
 > [!CAUTION]

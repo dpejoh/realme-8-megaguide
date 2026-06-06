@@ -26,6 +26,9 @@
 - [MTK Client](https://github.com/bkerler/mtkclient/archive/refs/heads/main.zip)
 - البرنامج الثابت: [C.18 RUI3](https://drive.google.com/file/d/1YHSIr4itg_5dPE2IbWAH9N8g6L5CGmaG/view?usp=drive_link) أو [F.11 RUI4](https://t.me/Realme8AOSPGroup) (تيليجرام)
 
+> [!TIP]
+> على لينكس، يمكن تشغيل أوامر `mtk` مباشرة (لا حاجة لبادئة `python`).
+
 ## الوميض
 
 1. افتح وحدة التحكم في مجلد [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)

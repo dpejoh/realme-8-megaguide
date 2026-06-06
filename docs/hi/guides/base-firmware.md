@@ -26,6 +26,9 @@
 - [MTK Client](https://github.com/bkerler/mtkclient/archive/refs/heads/main.zip)
 - फर्मवेयर: [C.18 RUI3](https://drive.google.com/file/d/1YHSIr4itg_5dPE2IbWAH9N8g6L5CGmaG/view?usp=drive_link) या [F.11 RUI4](https://t.me/Realme8AOSPGroup) (Telegram)
 
+> [!TIP]
+> लिनक्स पर, `mtk` कमांड सीधे चलाए जा सकते हैं (`python` उपसर्ग की आवश्यकता नहीं है)।
+
 ## फ्लैशिंग
 
 1. [MTK Client's](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763) फ़ोल्डर में कंसोल खोलें

@@ -23,6 +23,9 @@ Este método faz um backup da _firmware_ caso o IMEI seja apagado ou o sistema s
 - `libusb`
 - [MTK Client](https://github.com/bkerler/mtkclient/archive/refs/heads/main.zip)
 
+> [!TIP]
+> No Linux, os comandos `mtk` podem ser executados diretamente (sem o prefixo `python`).
+
 ## Backup
 
 1. Prepare uma pasta para armazenar as partições copiadas. Para este exemplo, usaremos `firmware-backup`.

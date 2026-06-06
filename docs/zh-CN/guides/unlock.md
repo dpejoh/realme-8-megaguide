@@ -53,6 +53,9 @@ pip3 install -r requirements.txt
 python -m pip install -r requirements.txt
 ```
 
+> [!TIP]
+> 在 Linux 上，`mtk` 命令可以直接运行（无需 `python` 前缀）。
+
 ## 降级到 RUI2
 
 1. **解压**并进入 [MTK Client 压缩包](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)的文件夹

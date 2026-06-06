@@ -26,6 +26,9 @@ Both use the same flashing steps. Only the firmware file itself differs.
 - [MTK Client](https://github.com/bkerler/mtkclient/archive/refs/heads/main.zip)
 - Firmware: [C.18 RUI3](https://drive.google.com/file/d/1YHSIr4itg_5dPE2IbWAH9N8g6L5CGmaG/view?usp=drive_link) or [F.11 RUI4](https://t.me/Realme8AOSPGroup) (Telegram)
 
+> [!TIP]
+> On Linux, `mtk` commands can be run directly (no `python` prefix needed).
+
 ## Flashing
 
 1. Open the console in [MTK Client's](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763) folder

@@ -53,6 +53,9 @@ pip3 install -r requirements.txt
 python -m pip install -r requirements.txt
 ```
 
+> [!TIP]
+> लिनक्स पर, `mtk` कमांड सीधे चलाए जा सकते हैं (`python` उपसर्ग की आवश्यकता नहीं है)।
+
 ## RUI2 में डाउनग्रेड करें
 
 1. [MTK Client आर्काइव](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763) को **एक्सट्रैक्ट** करें और उसके फ़ोल्डर में जाएँ

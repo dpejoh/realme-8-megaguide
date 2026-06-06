@@ -19,6 +19,9 @@
 - [platform-tools](https://dl.google.com/android/repository/platform-tools-latest-linux.zip)
 - [Magisk Manager APK](https://github.com/topjohnwu/Magisk/releases/tag/v27.0)
 
+> [!TIP]
+> على لينكس، يمكن تشغيل أوامر `mtk` مباشرة (لا حاجة لبادئة `python`).
+
 1. افتح وحدة التحكم في مجلد MTK Client.
 2. اقرأ قسم boot:
 

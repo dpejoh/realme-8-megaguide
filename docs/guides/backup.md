@@ -21,6 +21,10 @@ This method makes a _firmware_ backup in case IMEI is erased or system is bricke
 - `python` (>= 3.9)
 - `libusb`
 - [MTK Client](https://github.com/bkerler/mtkclient/archive/refs/heads/main.zip)
+
+> [!TIP]
+> On Linux, after installing the dependencies, `mtk` commands can be run directly (no `python` prefix needed).
+
 ## Backup
 
 1. Prepare a folder in which to store backed up partitions. For this example we'll use `firmware-backup`.

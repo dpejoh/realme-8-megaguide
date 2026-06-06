@@ -53,6 +53,9 @@ Instale `libusb` e `python` pelo gerenciador de pacotes (certifique-se de que Py
 python -m pip install -r requirements.txt
 ```
 
+> [!TIP]
+> No Linux, os comandos `mtk` podem ser executados diretamente (sem o prefixo `python`).
+
 ## Downgrade para RUI2
 
 1. **Extraia** e entre na pasta do [arquivo do MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)

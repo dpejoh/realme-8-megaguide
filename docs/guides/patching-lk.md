@@ -5,6 +5,9 @@
 
 Make sure your bootloader is unlocked first. See the [Unlock Bootloader](/guides/unlock) guide if you haven't done that yet.
 
+> [!TIP]
+> On Linux, `mtk` commands can be run directly (no `python` prefix needed).
+
 ## Patch and flash
 
 1. Open a console in the [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763) folder

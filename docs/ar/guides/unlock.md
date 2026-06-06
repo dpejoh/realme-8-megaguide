@@ -53,6 +53,9 @@ pip3 install -r requirements.txt
 python -m pip install -r requirements.txt
 ```
 
+> [!TIP]
+> على لينكس، يمكن تشغيل أوامر `mtk` مباشرة (لا حاجة لبادئة `python`).
+
 ## الرجوع إلى RUI2
 
 1. **فك ضغط** وادخل إلى مجلد [أرشيف MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763)

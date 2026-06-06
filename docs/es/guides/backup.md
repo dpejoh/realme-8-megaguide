@@ -23,6 +23,9 @@ Este método realiza un respaldo del _firmware_ por si el IMEI se borra o el sis
 - `libusb`
 - [MTK Client](https://github.com/bkerler/mtkclient/archive/refs/heads/main.zip)
 
+> [!TIP]
+> En Linux, los comandos `mtk` se pueden ejecutar directamente (no se necesita el prefijo `python`).
+
 ## Respaldo
 
 1. Prepara una carpeta donde almacenar las particiones respaldadas. Para este ejemplo usaremos `firmware-backup`.

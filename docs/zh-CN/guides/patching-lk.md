@@ -5,6 +5,9 @@
 
 确保已先解锁引导加载程序。如果尚未完成，请参阅[解锁引导加载程序](/zh-CN/guides/unlock)指南。
 
+> [!TIP]
+> 在 Linux 上，`mtk` 命令可以直接运行（无需 `python` 前缀）。
+
 ## 修补和刷写
 
 1. 在 [MTK Client](https://codeload.github.com/bkerler/mtkclient/zip/f9fe6ca65c93c2eb05adef7787069103c0d79763) 文件夹中打开控制台

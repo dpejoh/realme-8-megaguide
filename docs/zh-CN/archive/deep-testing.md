@@ -20,6 +20,9 @@
 - 固件：[C.18](https://drive.google.com/uc?id=1MPLnD4ofrW50u8V4C5I5srGucHJg60XW&export=download)
 - APK：[深度测试](https://drive.google.com/file/d/1pESMmJef6Gm9YlJAE7OA_DDNnhFn3Jpz/view?usp=sharing)
 
+> [!TIP]
+> 在 Linux 上，`mtk` 命令可以直接运行（无需 `python` 前缀）。
+
 ## 备份系统分区
 
 > [!CAUTION]
