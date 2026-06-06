@@ -1,7 +1,7 @@
 # Desbloquear o Bootloader
 
 > [!Warning]
-> **VOCÊ PERDERÁ A GARANTIA.** Leia cada etapa para evitar danificar o aparelho (brick). Windows 7 não é suportado. Se você estiver no RUI4, atualize para F.09 ou superior primeiro.
+> Leia cada etapa para evitar danificar o aparelho (brick). Windows 7 não é suportado. Se você estiver no RUI4, atualize para F.09 ou superior primeiro.
 
 Dúvidas? [Realme 8 AOSP](https://t.me/Realme8AOSPGroup) no Telegram ou [Discussões no GitHub](https://github.com/driedpampas/realme-8-megaguide/discussions/new/choose).
 

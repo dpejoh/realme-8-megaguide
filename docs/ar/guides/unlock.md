@@ -1,7 +1,7 @@
 # فتح قفل Bootloader
 
 > [!Warning]
-> **ستفقد الضمان.** اقرأ كل خطوة لتجنب تلف الجهاز. ويندوز 7 غير مدعوم. إذا كنت على RUI4، قم بالتحديث إلى F.09 أو أعلى أولاً.
+> اقرأ كل خطوة لتجنب تلف الجهاز. ويندوز 7 غير مدعوم. إذا كنت على RUI4، قم بالتحديث إلى F.09 أو أعلى أولاً.
 
 لديك أسئلة؟ [Realme 8 AOSP](https://t.me/Realme8AOSPGroup) على تيليجرام أو [مناقشات GitHub](https://github.com/driedpampas/realme-8-megaguide/discussions/new/choose).
 

@@ -1,7 +1,7 @@
 # 解锁引导加载程序
 
 > [!Warning]
-> **您将失去保修。** 请仔细阅读每一步以避免变砖。不支持 Windows 7。如果您使用的是 RUI4，请先更新到 F.09 或更高版本。
+> 请仔细阅读每一步以避免变砖。不支持 Windows 7。如果您使用的是 RUI4，请先更新到 F.09 或更高版本。
 
 有问题？联系 Telegram 上的 [Realme 8 AOSP](https://t.me/Realme8AOSPGroup) 或通过 [GitHub 讨论](https://github.com/driedpampas/realme-8-megaguide/discussions/new/choose)。
 

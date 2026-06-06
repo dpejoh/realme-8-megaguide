@@ -1,7 +1,7 @@
 # बूटलोडर अनलॉक करें
 
 > [!Warning]
-> **आपकी वारंटी खत्म हो जाएगी।** ब्रिकिंग से बचने के लिए प्रत्येक चरण पढ़ें। Windows 7 समर्थित नहीं है। यदि आप RUI4 पर हैं, तो पहले F.09 या उच्चतर पर अपडेट करें।
+> ब्रिकिंग से बचने के लिए प्रत्येक चरण पढ़ें। Windows 7 समर्थित नहीं है। यदि आप RUI4 पर हैं, तो पहले F.09 या उच्चतर पर अपडेट करें।
 
 प्रश्न? Telegram पर [Realme 8 AOSP](https://t.me/Realme8AOSPGroup) या [GitHub Discussions](https://github.com/driedpampas/realme-8-megaguide/discussions/new/choose)।
 
