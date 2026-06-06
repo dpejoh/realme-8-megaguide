@@ -25,7 +25,7 @@
 > **Nota:** algunas ROMs personalizadas incluyen el firmware base en el zip. Si la tuya lo incluye, salta el paso del firmware base y flashea la ROM directamente.
 
 - ROMs: [grupo de Telegram](https://t.me/Realme8AOSPGroup)
-- GApps: [MindTheGApps](https://github.com/MindTheGapps) (si es necesario)
+- GApps: [MindTheGApps](https://github.com/MindTheGapps) o [NikGApps](https://sourceforge.net/projects/nikgapps/files/) (si es necesario)
 - Recovery: [Página de Recuperaciones](/es/reference/recoveries)
 
 ## Reiniciar a fastboot
