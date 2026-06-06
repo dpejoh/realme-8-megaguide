@@ -47,10 +47,11 @@ pip3 install -r requirements.txt
 
 #### Linux
 
-अपने पैकेज मैनेजर से `libusb` और `python` इंस्टॉल करें (Python >= 3.9 सुनिश्चित करें)। [MTK Client](https://github.com/bkerler/mtkclient/archive/refs/heads/main.zip) डाउनलोड और एक्सट्रैक्ट करें, फिर चलाएँ:
+अपने पैकेज मैनेजर से `libusb` और `python` इंस्टॉल करें (Python >= 3.9 सुनिश्चित करें)। [MTK Client](https://github.com/bkerler/mtkclient/archive/refs/heads/main.zip) डाउनलोड और एक्सट्रैक्ट करें, फिर एक वर्चुअल एनवायरनमेंट बनाएँ और आवश्यकताएँ इंस्टॉल करें:
 
 ```bash
-python -m pip install -r requirements.txt
+python3 -m venv venv
+sudo venv/bin/pip install -r requirements.txt
 ```
 
 > [!TIP]

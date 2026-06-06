@@ -2,16 +2,15 @@
 
 
 
-## أدوات الاسترداد المخصصة
+## المستندة إلى TWRP
 
-*الثلاثة الأولى من صنع [AshBorn](https://github.com/RipperHybrid)*
+*الثلاثة من صنع [AshBorn](https://github.com/RipperHybrid)*
 
 | اسم أداة الاسترداد | توافق RealmeUI | تنزيل |
 | :---------------: | :------------: | :---: |
 | OrangeFox         | RUI 3, 4       | [تنزيل](https://github.com/RipperHybrid/OFOX-RMX3085/releases/latest) |
 | PitchBlack        | RUI 3, 4       | [تنزيل](https://github.com/RipperHybrid/PBRP-RMX3085/releases/latest) |
 | TWRP              | RUI 3, 4       | [تنزيل](https://github.com/RipperHybrid/TWRP-RMX3085/releases/latest) |
-| TWRP              | RUI 2          | [تنزيل](https://androidfilehost.com/?fid=7161016148664843901)         |
 
 ## أدوات استرداد LOS وما شابهها
 

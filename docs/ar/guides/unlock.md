@@ -47,10 +47,11 @@ pip3 install -r requirements.txt
 
 #### لينكس
 
-قم بتثبيت `libusb` و `python` من مدير الحزم الخاص بك (تأكد من أن Python >= 3.9). قم بتنزيل وفك ضغط [MTK Client](https://github.com/bkerler/mtkclient/archive/refs/heads/main.zip)، ثم شغّل:
+قم بتثبيت `libusb` و `python` من مدير الحزم الخاص بك (تأكد من أن Python >= 3.9). قم بتنزيل وفك ضغط [MTK Client](https://github.com/bkerler/mtkclient/archive/refs/heads/main.zip)، ثم أنشئ بيئة افتراضية وقم بتثبيت المتطلبات:
 
 ```bash
-python -m pip install -r requirements.txt
+python3 -m venv venv
+sudo venv/bin/pip install -r requirements.txt
 ```
 
 > [!TIP]

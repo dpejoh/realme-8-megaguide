@@ -47,10 +47,11 @@ pip3 install -r requirements.txt
 
 #### Linux
 
-从包管理器安装 `libusb` 和 `python`（确保 Python >= 3.9）。下载并解压 [MTK Client](https://github.com/bkerler/mtkclient/archive/refs/heads/main.zip)，然后运行：
+从包管理器安装 `libusb` 和 `python`（确保 Python >= 3.9）。下载并解压 [MTK Client](https://github.com/bkerler/mtkclient/archive/refs/heads/main.zip)，然后创建虚拟环境并安装依赖：
 
 ```bash
-python -m pip install -r requirements.txt
+python3 -m venv venv
+sudo venv/bin/pip install -r requirements.txt
 ```
 
 > [!TIP]

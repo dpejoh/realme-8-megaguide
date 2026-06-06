@@ -2,16 +2,15 @@
 
 
 
-## 自定义恢复
+## 基于 TWRP
 
-*前三个由 [AshBorn](https://github.com/RipperHybrid) 制作*
+*全部三个由 [AshBorn](https://github.com/RipperHybrid) 制作*
 
 | 恢复名称      | RealmeUI 兼容性 | 下载 |
 | :----------: | :------------: | :--: |
 | OrangeFox    | RUI 3, 4       | [下载](https://github.com/RipperHybrid/OFOX-RMX3085/releases/latest) |
 | PitchBlack   | RUI 3, 4       | [下载](https://github.com/RipperHybrid/PBRP-RMX3085/releases/latest) |
 | TWRP         | RUI 3, 4       | [下载](https://github.com/RipperHybrid/TWRP-RMX3085/releases/latest) |
-| TWRP         | RUI 2          | [下载](https://androidfilehost.com/?fid=7161016148664843901)         |
 
 ## LOS 及类似恢复
 

@@ -47,10 +47,11 @@ pip3 install -r requirements.txt
 
 #### Linux
 
-Install `libusb` and `python` from your package manager (ensure Python >= 3.9). Download and extract [MTK Client](https://github.com/bkerler/mtkclient/archive/refs/heads/main.zip), then run:
+Install `libusb` and `python` from your package manager (ensure Python >= 3.9). Download and extract [MTK Client](https://github.com/bkerler/mtkclient/archive/refs/heads/main.zip), then create a virtual environment and install requirements:
 
 ```bash
-python -m pip install -r requirements.txt
+python3 -m venv venv
+sudo venv/bin/pip install -r requirements.txt
 ```
 
 > [!TIP]

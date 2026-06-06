@@ -2,16 +2,15 @@
 
 
 
-## Recoveries personalizadas
+## Baseadas em TWRP
 
-*As três primeiras foram feitas por [AshBorn](https://github.com/RipperHybrid)*
+*As três foram feitas por [AshBorn](https://github.com/RipperHybrid)*
 
 | Nome da Recovery | Compatibilidade RealmeUI | Download |
 | :--------------: | :----------------------: | :------: |
 | OrangeFox        | RUI 3, 4                 | [Download](https://github.com/RipperHybrid/OFOX-RMX3085/releases/latest) |
 | PitchBlack       | RUI 3, 4                 | [Download](https://github.com/RipperHybrid/PBRP-RMX3085/releases/latest) |
 | TWRP             | RUI 3, 4                 | [Download](https://github.com/RipperHybrid/TWRP-RMX3085/releases/latest) |
-| TWRP             | RUI 2                    | [Download](https://androidfilehost.com/?fid=7161016148664843901)         |
 
 ## Recoveries LOS e similares
 
